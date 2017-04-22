@@ -4,8 +4,8 @@ import React, { Component } from 'react';
 export default class Moment extends Component {
   static propTypes = {
     image: PropTypes.string,
+    paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
     safeTextAreas: PropTypes.arrayOf(PropTypes.object),
-    text: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired,
   };
 
   static defaultProps = {
@@ -13,7 +13,7 @@ export default class Moment extends Component {
   };
 
   render() {
-    const { image, safeTextAreas, text } = this.props;
+    const { image, paragraphs, safeTextAreas } = this.props;
 
     const extraStyles = image
       ? { backgroundImage: `url(${image})`, backgroundSize: '100% 100%' }
@@ -46,7 +46,7 @@ export default class Moment extends Component {
             ...extraTextStyles,
           }}
         >
-          {text}
+          {paragraphs.map((text, i) => <p key={i}>{text}</p>)}
         </div>
       </div>
     );

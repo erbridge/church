@@ -53,14 +53,14 @@ export class App extends Component {
       <div style={{ width: '100%', height: '100%', backgroundColor: 'black' }}>
         <Window>
           <Preload
-            loadingIndicator={<Moment text="Loading..." />}
+            loadingIndicator={<Moment paragraphs={['Loading...']} />}
             images={Object.values(images)}
           >
             {paragraphs && paragraphs.length
               ? <Moment
                   image={images[image]}
+                  paragraphs={paragraphs}
                   safeTextAreas={safeTextAreas}
-                  text={paragraphs.map((text, i) => <p key={i}>{text}</p>)}
                 />
               : <div />}
           </Preload>
