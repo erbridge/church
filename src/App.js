@@ -3,8 +3,6 @@ import { Provider } from 'react-redux';
 
 import { createStore } from './store';
 
-import logo from './logo.svg';
-
 const store = createStore();
 
 export default class App extends Component {
@@ -20,7 +18,6 @@ export default class App extends Component {
               color: 'white',
             }}
           >
-            <img src={logo} alt="logo" style={{ height: 80 }} />
             <h2>Welcome to React</h2>
           </div>
           <p style={{ fontSize: 'large' }}>
