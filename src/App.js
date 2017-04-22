@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Preload } from 'react-preload';
 import { Provider } from 'react-redux';
 
 import { createStore } from './store';
@@ -6,7 +7,9 @@ import { createStore } from './store';
 import Moment from './components/Moment';
 import Window from './components/Window';
 
-import testImage from './assets/test/test.png';
+const images = {
+  test: require('./assets/test/test.png'),
+};
 
 const store = createStore();
 
@@ -17,8 +20,13 @@ export default class App extends Component {
         <div
           style={{ width: '100%', height: '100%', backgroundColor: 'black' }}
         >
-          <Window style={{ backgroundColor: 'white' }}>
-            <Moment image={testImage} text={'This is the story!'} />
+          <Window>
+            <Preload
+              loadingIndicator={<Moment text="Loading..." />}
+              images={Object.values(images)}
+            >
+              <Moment image={images.test} text="This is the story!" />
+            </Preload>
           </Window>
         </div>
       </Provider>
