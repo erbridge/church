@@ -15,7 +15,7 @@ export default class Moment extends Component {
   render() {
     const { image, paragraphs, safeTextAreas } = this.props;
 
-    const extraStyles = image
+    const extraContainerStyles = image
       ? { backgroundImage: `url(${image})`, backgroundSize: '100% 100%' }
       : {};
 
@@ -31,22 +31,26 @@ export default class Moment extends Component {
           height: '100%',
           alignItems: 'center',
           justifyContent: 'center',
-          overflow: 'hidden',
-          ...extraStyles,
+          ...extraContainerStyles,
         }}
       >
         <div
           style={{
             flex: 1,
+            overflow: 'auto',
             textAlign: 'center',
-            color: '#eee',
             mixBlendMode: 'difference',
+            color: '#eee',
             fontFamily: 'Asar, serif',
             fontSize: 24,
             ...extraTextStyles,
           }}
         >
-          {paragraphs.map((text, i) => <p key={i}>{text}</p>)}
+          {paragraphs.map((text, i) => (
+            <p key={i}>
+              {text}
+            </p>
+          ))}
         </div>
       </div>
     );
