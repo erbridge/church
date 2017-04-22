@@ -1,6 +1,10 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
+import Link from './Link';
+
+const LINK_RE = /\[\[\s*(.+?)\s*:\s*(.+?)\s*\]\]/g;
+
 export default class Moment extends Component {
   static propTypes = {
     image: PropTypes.string,
@@ -12,13 +16,35 @@ export default class Moment extends Component {
     safeTextAreas: [],
   };
 
+  renderParagraph(text, index) {
+    text = text.trim();
+
+    let link = LINK_RE.exec(text);
+    let outputText = [];
+    let lastIndex = 0;
+
+    while (link !== null) {
+      outputText.push(text.substring(lastIndex, link.index));
+      outputText.push(<Link key={link.index} target={link[2]}>{link[1]}</Link>);
+
+      lastIndex = link.index + link[0].length;
+
+      link = LINK_RE.exec(text);
+    }
+
+    if (outputText.length) {
+      outputText.push(text.substring(lastIndex));
+    }
+
+    return <p key={index}>{outputText.length ? outputText : text}</p>
+  }
+
   render() {
     const { image, paragraphs, safeTextAreas } = this.props;
 
     const extraContainerStyles = image
       ? { backgroundImage: `url(${image})`, backgroundSize: '100% 100%' }
       : {};
-
     const extraTextStyles = safeTextAreas && safeTextAreas.length
       ? { position: 'absolute', ...safeTextAreas[0] }
       : {};
@@ -46,11 +72,7 @@ export default class Moment extends Component {
             ...extraTextStyles,
           }}
         >
-          {paragraphs.map((text, i) => (
-            <p key={i}>
-              {text}
-            </p>
-          ))}
+          {paragraphs.map((text, i) => this.renderParagraph(text, i))}
         </div>
       </div>
     );

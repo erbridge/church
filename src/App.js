@@ -25,6 +25,7 @@ export class App extends Component {
 
   static propTypes = {
     image: PropTypes.string,
+    moment: PropTypes.string.isRequired,
     paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
   };
 
@@ -36,8 +37,16 @@ export class App extends Component {
     this.narrative = new Narrative(store);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.moment !== this.props.moment) {
+      this.narrative.chooseMoment(nextProps.moment);
+    }
+  }
+
   componentDidMount() {
-    this.narrative.start();
+    const { moment } = this.props;
+
+    this.narrative.start(moment);
   }
 
   render() {
@@ -72,6 +81,7 @@ export class App extends Component {
 
 const mapStateToProps = state => ({
   image: storySelectors.getImage(state),
+  moment: storySelectors.getMoment(state),
   paragraphs: storySelectors.getParagraphs(state),
 });
 
