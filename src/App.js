@@ -10,13 +10,22 @@ import storySelectors from './store/selectors/story';
 import Moment from './components/Moment';
 import Window from './components/Window';
 
-const images = {
-  test: require('./assets/images/test.png'),
-};
+import data from './assets/data';
+
+const images = {};
+
+Object.keys(data.images).forEach(
+  key => (images[key] = require(`./assets/images/${key}.png`)),
+);
 
 export class App extends Component {
   static contextTypes = {
     store: PropTypes.object.isRequired,
+  };
+
+  static propTypes = {
+    image: PropTypes.string,
+    paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
   };
 
   constructor(...props) {
@@ -32,7 +41,13 @@ export class App extends Component {
   }
 
   render() {
-    const { paragraphs } = this.props;
+    const { image, paragraphs } = this.props;
+
+    let safeTextAreas = [];
+
+    if (image) {
+      safeTextAreas = data.images[image].safeTextAreas;
+    }
 
     return (
       <div style={{ width: '100%', height: '100%', backgroundColor: 'black' }}>
@@ -43,7 +58,8 @@ export class App extends Component {
           >
             {paragraphs && paragraphs.length
               ? <Moment
-                  image={images.test}
+                  image={images[image]}
+                  safeTextAreas={safeTextAreas}
                   text={paragraphs.map((text, i) => <p key={i}>{text}</p>)}
                 />
               : <div />}
@@ -55,6 +71,7 @@ export class App extends Component {
 }
 
 const mapStateToProps = state => ({
+  image: storySelectors.getImage(state),
   paragraphs: storySelectors.getParagraphs(state),
 });
 
