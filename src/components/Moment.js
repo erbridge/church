@@ -66,7 +66,7 @@ export default class Moment extends Component {
             overflow: 'auto',
             textAlign: 'center',
             mixBlendMode: 'difference',
-            color: '#eee',
+            color: '#bbb',
             fontFamily: 'Asar, serif',
             fontSize: 24,
             ...extraTextStyles,

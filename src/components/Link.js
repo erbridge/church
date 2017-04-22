@@ -15,7 +15,14 @@ export class Link extends Component {
     const { children, dispatch, target } = this.props;
 
     return (
-      <span onClick={() => dispatch(chooseMoment({ moment: target }))}>
+      <span
+        onClick={() => dispatch(chooseMoment({ moment: target }))}
+        style={{
+          cursor: 'pointer',
+          color: 'white',
+          textShadow: '0 0 5px white',
+        }}
+      >
         {children}
       </span>
     );
