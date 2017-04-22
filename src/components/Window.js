@@ -68,7 +68,17 @@ export default class Window extends Component {
     const { height, left, top, width } = this.state;
 
     return (
-      <div style={{ ...style, position: 'absolute', left, top, width, height }}>
+      <div
+        style={{
+          ...style,
+          position: 'absolute',
+          left,
+          top,
+          width,
+          height,
+          overflow: 'hidden',
+        }}
+      >
         {children}
       </div>
     );

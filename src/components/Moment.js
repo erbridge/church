@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 export default class Moment extends Component {
   static propTypes = {
     image: PropTypes.string,
-    text: PropTypes.string.isRequired,
+    text: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired,
   };
 
   render() {

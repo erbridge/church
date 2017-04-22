@@ -1,35 +1,61 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Preload } from 'react-preload';
-import { Provider } from 'react-redux';
+import { connect } from 'react-redux';
 
-import { createStore } from './store';
+import Narrative from './narrative';
+
+import storySelectors from './store/selectors/story';
 
 import Moment from './components/Moment';
 import Window from './components/Window';
 
 const images = {
-  test: require('./assets/test/test.png'),
+  test: require('./assets/images/test.png'),
 };
 
-const store = createStore();
+export class App extends Component {
+  static contextTypes = {
+    store: PropTypes.object.isRequired,
+  };
 
-export default class App extends Component {
+  constructor(...props) {
+    super(...props);
+
+    const { store } = this.context;
+
+    this.narrative = new Narrative(store);
+  }
+
+  componentDidMount() {
+    this.narrative.start();
+  }
+
   render() {
+    const { paragraphs } = this.props;
+
     return (
-      <Provider store={store}>
-        <div
-          style={{ width: '100%', height: '100%', backgroundColor: 'black' }}
-        >
-          <Window>
-            <Preload
-              loadingIndicator={<Moment text="Loading..." />}
-              images={Object.values(images)}
-            >
-              <Moment image={images.test} text="This is the story!" />
-            </Preload>
-          </Window>
-        </div>
-      </Provider>
+      <div style={{ width: '100%', height: '100%', backgroundColor: 'black' }}>
+        <Window>
+          <Preload
+            loadingIndicator={<Moment text="Loading..." />}
+            images={Object.values(images)}
+          >
+            {paragraphs && paragraphs.length
+              ? <Moment
+                  image={images.test}
+                  text={paragraphs.map((text, i) => <p key={i}>{text}</p>)}
+                />
+              : <div />}
+          </Preload>
+        </Window>
+      </div>
     );
   }
 }
+
+const mapStateToProps = state => ({
+  paragraphs: storySelectors.getParagraphs(state),
+});
+
+export default connect(mapStateToProps)(App);
