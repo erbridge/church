@@ -31,7 +31,7 @@ export default {
     fuckin: {
       cloudLinkLocation: { top: '10%', right: '10%' },
       safeTextAreas: [
-        { top: '10%', left: '10%', width: '40%', height: '80%' },
+        { top: '10%', left: '10%', width: '35%', height: '80%' },
       ],
     },
     pews_base: {
