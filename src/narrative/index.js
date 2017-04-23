@@ -8,7 +8,10 @@ import {
 } from '../store/actions/story';
 
 import story from '../assets/story/main.ink.json';
+
 export default class Narrative {
+  processLoopIndex = 0;
+
   constructor(store) {
     this.store = store;
     this.story = new Story(story);
@@ -29,10 +32,16 @@ export default class Narrative {
 
     this.story.ChoosePathString(moment);
 
-    return this._processStory();
+    this.processLoopIndex++;
+
+    return this._processStory(this.processLoopIndex);
   }
 
-  async _processStory() {
+  async _processStory(processLoopIndex) {
+    if (processLoopIndex !== this.processLoopIndex) {
+      return;
+    }
+
     if (this.story.canContinue) {
       let text = this.story.Continue();
 
@@ -54,9 +63,9 @@ export default class Narrative {
 
       this.store.dispatch(addParagraph({ text }));
 
-      await sleep(5000);
+      await sleep(1000);
 
-      await this._processStory();
+      await this._processStory(processLoopIndex);
     }
   }
 }
