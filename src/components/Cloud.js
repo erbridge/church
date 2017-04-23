@@ -33,8 +33,6 @@ export default class Cloud extends Component {
   }
 
   renderItem({ text, target, visited }, index) {
-    if (visited) console.log(target);
-
     const { items } = this.props;
     const { rotationOffset } = this.state;
 
