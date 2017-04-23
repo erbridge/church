@@ -125,7 +125,7 @@ can't
 
 fuck
 FUCK
-//FUCK//
+^^FUCK^^
 
 -> DONE
 
@@ -135,13 +135,13 @@ FUCK
 he takes my hand
 	urgently
 		he pulls me
-				//come// he says
+				^^come^^ he says
 
 					I follow
 
 the door creaks open on its old, old hinges
 	it sounds like a moan
-	 //ohh//
+	 ^^ohh^^
 
 we're barely inside and he pushes me hard against the cold stone wall
 	I gasp
@@ -183,7 +183,7 @@ but in a moment I see something in the background
 			I've always wanted to be sacrilegious
 
 I bite my lip and put my hand on his chest
-	//let's go over there// I say
+	^^let's go over there^^ I say
 		I pull him forwards
 			through the rows of rotten wood
 				to the front
@@ -196,7 +196,7 @@ I jump up
 			he moves forward
 				a look on his face
 					halfway between a smile and pure desire
-						//ohh//
+						^^ohh^^
 
 he pulls himself into me
 	I grasp the stone beneath me
@@ -215,22 +215,22 @@ whatever god used to live here
 == plague ==
 # image: wall_base
 
-**Friday 14th May**
+&&Friday 14th May&&
 The ill have been coming in for days and I'm not sure we can handle too many more. The rooms are full, what few we have, and I'm already running low on supplies even though they were delivered just two days ago. I should ask Peter for more, but I am afraid he'll say no. We've got hardly any money left, now.
 
 But how can we turn them away? How can I tell these people in need that they're less important than the ones who came before?
 
-**Saturday 15th May**
+&&Saturday 15th May&&
 Three more died today. Two in their sleep, and one in the middle of the night, screaming and bleeding, in so much pain. I wish that I could have helped, but we used the last of the morphine months ago, and it was all I could do to give him something to bite down on and wipe his brow as his pustules burst and trickled hot acid down his body.
 
 I couldn't even spare the others from watching. They were all awake, all terrified, watching this man [[die : funeral]] and knowing that their fate was the same.
 
-**Sunday 16th May**
+&&Sunday 16th May&&
 Today is meant to be the holy day, and we are in a holy building, but it does not feel holy. It does not feel like anyone is watching, or that we are being offered any kind of grace. It is too raw, too real, too destructive; if any benevolent, omnipotent being is seeing this happen in his own house, how can he do [[nothing : help]]?
 
 I used to believe, but I find it hard to know how to believe now.
 
-**Tuesday 18th May**
+&&Tuesday 18th May&&
 I saw a rash on Peter's back this morning as he bent down to treat our newest, youngest patient. She is just four, but she has watched her parents and brothers die. Now she will, too, and there's nothing we can do.
 
 But if that rash is the first symptom... I'll lose Peter, too. I'll have to watch him go just as I've watched hundreds before, I'll have to feed him and clean him and nurse him as he cries, and in the end, I'll be [[alone : silence]], again.
@@ -251,17 +251,17 @@ Anyway. I had to make some more, but it's not the season for raspberries, so my 
 
 But as if by magic, there was a tiny little bush, just a few yards away, covered in the most colourful little berries I'd ever seen. I'm not sure what they were - I've never seen such bright little things before - but they weren't poisonous, of that I was sure. Somehow.
 
-And they boiled into the most //lovely// jam. It was somehow purple and blue and pink at the same time, this weird colour that I hadn't seen before. It was mesmerising. I almost wanted to jump into the pan of boiling sugar. I didn't, though.
+And they boiled into the most ^^lovely^^ jam. It was somehow purple and blue and pink at the same time, this weird colour that I hadn't seen before. It was mesmerising. I almost wanted to jump into the pan of boiling sugar. I didn't, though.
 
-I had to hide it from Trevor, of course. That man is a //fiend// for jam.
+I had to hide it from Trevor, of course. That man is a ^^fiend^^ for jam.
 
-The sponge is perfect - as it always is, I mean, I'm a vicar's wife, cake is what I //do// - moist and soft and buttery.
+The sponge is perfect - as it always is, I mean, I'm a vicar's wife, cake is what I ^^do^^ - moist and soft and buttery.
 
-But the //jam//. It's sharp, it's sweet, it's fruity, all at the same time, but the weirdest bit is what happens when you eat it.
+But the ^^jam^^. It's sharp, it's sweet, it's fruity, all at the same time, but the weirdest bit is what happens when you eat it.
 
 I won't tell Trevor this, because he'll think I've gone batty, but I had the most intense daydream. Not like a hallucination, not that I've ever taken drugs, gosh no! But more like a nostalgia trip, really.
 
-I remembered being around eight, collecting frogspawn in the pond at the bottom of my garden. But I wasn't just remembering, it was like I was //there//. I could hear my mother calling me in for tea, could smell the daisies and the cows in the field down the road.
+I remembered being around eight, collecting frogspawn in the pond at the bottom of my garden. But I wasn't just remembering, it was like I was ^^there^^. I could hear my mother calling me in for tea, could smell the daisies and the cows in the field down the road.
 
 Very strange. I wonder if the judges will notice?
 
@@ -278,17 +278,17 @@ oh. my. god. you will never guess what Bethany just did.
 
 she stole. my. rug.
 
-I spent so long working on that rug what the //fuck// Bethany
+I spent so long working on that rug what the ^^fuck^^ Bethany
 
-it's made out of that bear that Chad killed for me and, like, that was //so// romantic, even if he did die from falling off a cliff, like, three days later
+it's made out of that bear that Chad killed for me and, like, that was ^^so^^ romantic, even if he did die from falling off a cliff, like, three days later
 
 so it's like the only reminder I have of him
 
-fucking //hell// Bethany
+fucking ^^hell^^ Bethany
 
 anyway I know it was her because she did a fucking painting on the wall of her stupid cave of her stealing the rug
 
-//really subtle Bethany you fucking moron//
+^^really subtle Bethany you fucking moron^^
 
 so I've decided I'm going to piss on her fire while she's sleeping
 
@@ -352,11 +352,11 @@ I'm thinking about being on holiday, now.
 
 Sorry. Sorry, God. I should be concentrating.
 
-(But I can't. This [[sermon : sermon]] is //boring//. Why can't we hear something about, I don't know, how to keep going in a marriage that you're worried is drying up?)
+(But I can't. This [[sermon : sermon]] is ^^boring^^. Why can't we hear something about, I don't know, how to keep going in a marriage that you're worried is drying up?)
 
 "Do unto others as you would have them do unto you," the vicar says, as if it's incredibly wise and doesn't make him sound like an 18th-century plonker.
 
-(I'm not doing anything unto Janet until she trims her hedges //like I asked her to//.)
+(I'm not doing anything unto Janet until she trims her hedges ^^like I asked her to^^.)
 
 There's a low mumble as we're asked to do the Lord's Prayer.
 
@@ -364,7 +364,7 @@ There's a low mumble as we're asked to do the Lord's Prayer.
 
 Does anyone even pay attention any more?
 
-(I haven't in //years//, and yet I keep coming back, maybe out of habit, maybe out of guilt.)
+(I haven't in ^^years^^, and yet I keep coming back, maybe out of habit, maybe out of guilt.)
 
 Amen.
 
@@ -381,37 +381,37 @@ it makes my skin tingle, runs shivers up my spine
 
 I'm meant to be doing a reading but
 
-//hello// I call out
+^^hello^^ I call out
 
 it doesn't usually... feel... like this
 
-//hello// comes the echo
+^^hello^^ comes the echo
 
-//ello llo lo o, o, o//
+^^ello llo lo o, o, o^^
 
-//hello//
+^^hello^^
 
 that wasn't an echo, but it spoke like one
 
-//are you there// I ask, voice soft and trembling
+^^are you there^^ I ask, voice soft and trembling
 
-//are you, are you there, there// it replies
+^^are you, are you there, there^^ it replies
 
-//who are you// I say
+^^who are you^^ I say
 
-//you, you, you// comes the answer
+^^you, you, you^^ comes the answer
 
 I look for the telltale sign of a presence, a shadow, a smudge on the periphery of my consciousness, and I see her, crouching in the shadow of a crumbled pillar
 
 I can't look at her directly; she is like a blur of a far-off galaxy in the night sky that can only be seen by looking slightly away
 
-//can I help// I ask
+^^can I help^^ I ask
 
-//help// she says
+^^help^^ she says
 
 she looks up at me, her eyes deep translucent pools of grey-green
 
-//HELP//
+^^HELP^^
 
 -> DONE
 
@@ -449,7 +449,7 @@ BYE BYE DOGYS
 == dad ==
 # image: altar_base
 
-Dad's told me to wait in the vestibule. But I don't want to, it's cold and it's raining. He said he'd be half an hour which is //ages// so I'm going to explore the church a bit.
+Dad's told me to wait in the vestibule. But I don't want to, it's cold and it's raining. He said he'd be half an hour which is ^^ages^^ so I'm going to explore the church a bit.
 
 I only ever get to see it at [[Sunday School : belief]] so I want to have a look at all the other bits.
 
@@ -482,7 +482,7 @@ I wonder where dad's gone.
 
 I feel like I'm supposed to be sad, and I am, but mostly this is weirdly hilarious, and that makes me feel terrible. I told my therapist about this and she said it was a perfectly normal emotional response to stress and grief, but I don't want to laugh at a funeral.
 
-It's weird, though, isn't it? Here's this person we used to know, used to hang out with, play golf with, and now she's in a box. //So weird//. I wonder what she's wearing. Knowing her, probably that expensive Chanel suit she'd been saving for a "special occasion", which, again, is //so weird// because, well, she's never going to use it for anything else now, is she?
+It's weird, though, isn't it? Here's this person we used to know, used to hang out with, play golf with, and now she's in a box. ^^So weird^^. I wonder what she's wearing. Knowing her, probably that expensive Chanel suit she'd been saving for a "special occasion", which, again, is ^^so weird^^ because, well, she's never going to use it for anything else now, is she?
 
 And god, I love her but that's a shame, a real waste of a Chanel suit.
 
@@ -494,7 +494,7 @@ What will her grave say? "Here lies Margaret. She was great at Bridge, but she c
 
 I hate that she'll get something trite and meaningless, instead. "Beloved". Yeah, you and everyone else. "Dearly missed". Sure. "Wife, mother". They never put your career on there, do they?
 
-Now we're listening to a melancholy cover of Over The Rainbow as they wheel her coffin into the huge fire. Will her skin bubble and boil like it does when you burn your skin? Will her eyes melt and dribble down her cheeks like tears? What must it //smell// like? Is her essence in the ash or the smoke?
+Now we're listening to a melancholy cover of Over The Rainbow as they wheel her coffin into the huge fire. Will her skin bubble and boil like it does when you burn your skin? Will her eyes melt and dribble down her cheeks like tears? What must it ^^smell^^ like? Is her essence in the ash or the smoke?
 
 Ha. It's so weird I can't help but laugh.
 
@@ -523,7 +523,7 @@ AnD I
 
 AM
 
-**hUNGrY**
+&&hUNGrY&&
 
 -> DONE
 
@@ -536,13 +536,13 @@ hello?
 
 hello??
 
-//kzzzzzzt//
+^^kzzzzzzt^^
 
 hello???
 
 --lease, any---ne, plea---
 
-//krrrzzzkkkk//
+^^krrrzzzkkkk^^
 
 I need ---lp
 
@@ -558,7 +558,7 @@ I can he---- them
 
 I'm sc---red
 
-//kkzzzrrrttttttt//
+^^kkzzzrrrttttttt^^
 
 -> DONE
 
@@ -577,15 +577,15 @@ I charge you both, here in the presence of God and the witness of this company, 
 
 Elizabeth, will you have this man to be your husband; to live together with him in the covenant of marriage? Will you love him, comfort him, honour and keep him, in sickness and in health; and, forsaking all others, be faithful unto him as long as you both shall live?
 
-//I will.//
+^^I will.^^
 
 John, will you have this woman to be your wife; to live together with her in the covenant of marriage? Will you love her, comfort her, honour and keep her, in sickness and in health; and, forsaking all others, be faithful unto her as long as you both shall live?
 
-//I will.//
+^^I will.^^
 
 Bless, O Lord, these rings as a symbol of the vows by which this man and this woman have bound themselves to each other; through Jesus Christ our Lord.
 
-//Amen.//
+^^Amen.^^
 
 Elizabeth and John, having witnessed your vows of love to one another, it is my joy to present you to all gathered here as husband and wife. You may kiss the bride.
 
@@ -594,7 +594,7 @@ Elizabeth and John, having witnessed your vows of love to one another, it is my 
 == funeral ==
 # image: shit
 
-//well, this is it, then. The sum of my life, measured in people. Measured by those who came to mourn me. The amount of bums on seats. It's not even a full house.
+^^well, this is it, then. The sum of my life, measured in people. Measured by those who came to mourn me. The amount of bums on seats. It's not even a full house.
 
 Still. Can't expect them all to come to something like this. It's incredibly po-faced. Not like me at all, but it's not for me, is it? It's for them. The teary-eyed, mascara-stained people I left behind.
 
@@ -611,7 +611,7 @@ Why is my sister not crying?
 
 Why did Amelia turn up, at all, after everything?
 
-It's frustrating to be so curious when I know I won't ever get to find out the answers. It's just this, a snippet of life after life, a last photograph to dwell on for however long, for whatever comes next.//
+It's frustrating to be so curious when I know I won't ever get to find out the answers. It's just this, a snippet of life after life, a last photograph to dwell on for however long, for whatever comes next.^^
 
 -> DONE
 
@@ -620,9 +620,9 @@ It's frustrating to be so curious when I know I won't ever get to find out the a
 
 I'm going through it all in my head now, the candles, the flowers, the dresses, the timings, the money, the cost, the expense.
 
-It's all done now, anyway. It's going to be perfect because I've //made// it perfect.
+It's all done now, anyway. It's going to be perfect because I've ^^made^^ it perfect.
 
-It's going to be perfect because it //has// to be.
+It's going to be perfect because it ^^has^^ to be.
 
 I know I'm not supposed to be in the church before the wedding but I am anyway. I don't believe in superstition, but I do like doing all the things it involves.
 
@@ -632,9 +632,9 @@ The church smells of lilies. I love the smell of lilies. My grandmother had lili
 
 At the front is a solitary candle, which we will light together to symbolise unity.
 
-And the rings. The rings are //beautiful//. I had them custom-made by a bunch of monks in a remote monastery up some mountain in, I don't know, Croatia or something. They've got our initials carved into them on the inside.
+And the rings. The rings are ^^beautiful^^. I had them custom-made by a bunch of monks in a remote monastery up some mountain in, I don't know, Croatia or something. They've got our initials carved into them on the inside.
 
-It's going to be //perfect//.
+It's going to be ^^perfect^^.
 
 -> DONE
 
@@ -700,61 +700,61 @@ heh
 
 Jim! JIM
 
-//shhhhhhhhhhhhHHH//
+^^shhhhhhhhhhhhHHH^^
 
-okay okay //Jim//
+okay okay ^^Jim^^
 
-//what?//
+^^what?^^
 
-//I'm bored//
+^^I'm bored^^
 
-//me too//
+^^me too^^
 
-//let's go on a adventure//
+^^let's go on a adventure^^
 
-//okay//
+^^okay^^
 
 You crawl on scraped knees across the flagstone floor as your parents sign and roll their eyes.
 
-//Jim Jim Jim//
+^^Jim Jim Jim^^
 
-//yeah//
+^^yeah^^
 
-//let's find some treasure//
+^^let's find some treasure^^
 
-//okay//
+^^okay^^
 
 You're the leader of this tiny gang, and Jim will do whatever you tell him to.
 
-//I heard there was a big pile of gold at the front//
+^^I heard there was a big pile of gold at the front^^
 
-//yeah?//
+^^yeah?^^
 
-//yeah maybe there's a dragon//
+^^yeah maybe there's a dragon^^
 
-//oh//
+^^oh^^
 
-//don't be such a wimp//
+^^don't be such a wimp^^
 
-//okay//
+^^okay^^
 
 He's monosyllabic today. Not that you know that word, but you know what it means: it means he's afraid. You don't know why, but it doesn't matter; his bravery has always been a parasitic version of your own, feeding off you in a way you won't even notice for years.
 
-//I bet we can make friends with the dragon//
+^^I bet we can make friends with the dragon^^
 
-//...yeah?//
+^^...yeah?^^
 
-//yeah I heard dragons love gold so we just need to find something he'll like better than his big pile//
+^^yeah I heard dragons love gold so we just need to find something he'll like better than his big pile^^
 
 Jim fishes in his pockets and pulls out a crumpled ball of gold foil from a chocolate coin.
 
-//perfect. Give it here//
+^^perfect. Give it here^^
 
-//okay//
+^^okay^^
 
 Jim clearly doesn't want to give it here. It is his own treasure and he wants to keep it but he also doesn't want you to be mean to him any more and he definitely doesn't want to be eaten by a dragon.
 
-//now you stand guard//
+^^now you stand guard^^
 
 You crawl through the legs of the irritated churchgoers who are still trying to listen to the sermon. Clearly they aren't interested in treasure.
 
@@ -766,15 +766,15 @@ You're nearly there.
 
 You do a good approximation of an army crawl right up to the altar and--
 
-//ELIZABETH// comes the warning tones of your mother, who has chased you down, finally.
+^^ELIZABETH^^ comes the warning tones of your mother, who has chased you down, finally.
 
-//GET DOWN FROM THERE// she hisses.
+^^GET DOWN FROM THERE^^ she hisses.
 
 You stand up, sheepishly, and trail back to her.
 
-//WHAT DO YOU THINK YOU'RE DOING// she says as she grabs you by the scruff of your neck.
+^^WHAT DO YOU THINK YOU'RE DOING^^ she says as she grabs you by the scruff of your neck.
 
-//sorry mum// you say. //I got you this.// You hand her the golden foil ball.
+^^sorry mum^^ you say. ^^I got you this.^^ You hand her the golden foil ball.
 
 She throws it on the floor.
 
@@ -789,7 +789,7 @@ Jim's face falls.
 
 The vicar toddles off, all pudgy limbs and repressed sexual fantasies.
 
-Or so you //imagine//.
+Or so you ^^imagine^^.
 
 You continue chiselling at the floors, pulling up eroded grave markers belonging to a Mr T----s S-----smith.
 
@@ -805,7 +805,7 @@ There's a new smell in the air. Where it smelled of death before, now it smells 
 
 You cough and retch involuntarily and the vicar rushes over.
 
-"What's-- oh, oh //my//," says the vicar, face paling.
+"What's-- oh, oh ^^my^^," says the vicar, face paling.
 
 "Not sure, but maybe it's a leaking sewage pipe, I'll, uh, have a look," you tell him. You're not keen.
 
@@ -865,7 +865,7 @@ Y  O  U  R     S  K  I  N     C  R  A  C  K  S     O  P  E  N
 
 
 
-**Y   O   U        S   C  R E A M**
+&&Y   O   U        S   C  R E A M&&
 
 
 it is [[too late : dark]].
@@ -875,11 +875,11 @@ it is [[too late : dark]].
 == choir ==
 # image: window_base
 
-//laaaacrimooooosaaaa//
+^^laaaacrimooooosaaaa^^
 
-//diiiies iiiilllaaa//
+^^diiiies iiiilllaaa^^
 
-//qua-
+^^qua-
 -re-
 -sur-
 -get
@@ -888,16 +888,16 @@ ex
 
 fa-
 -vi-
--lla//
+-lla^^
 
-//juuuudiiiicaaaandduuuss
-hooooomooooo reeeeeuuuus//
+^^juuuudiiiicaaaandduuuss
+hooooomooooo reeeeeuuuus^^
 
 the soft, sweet sound of harmonies echoes through the arches and pillars of the church, ascending gently like a bird, crescendoing like thunder.
 
-//laaacrimooooosa//
+^^laaacrimooooosa^^
 
-//diiiies iiiilllaaa//
+^^diiiies iiiilllaaa^^
 
 now the key changes, becomes urgent, less mournful, a cry out to the heavens.
 
@@ -997,7 +997,7 @@ I run my hands under the benches of the pews. There is the usual: chewing gum, l
 
 But this time, a note. It's not the first one I've found. It's tucked between the joints in the [[wood : table]]. And, yes, it's in the same handwriting as before.
 
-//
+^^
 \~
 
 I have always wanted
@@ -1007,7 +1007,7 @@ to [[fuck : fuckin]]
 in a church.
 
 \~
-//
+^^
 
 -> DONE
 
@@ -1020,7 +1020,7 @@ in a church.
 
 ...but I can't.
 
-They're not his, they're mine. Mine...and //theirs//.
+They're not his, they're mine. Mine...and ^^theirs^^.
 
 I share my secrets with a [[stranger : fuck]].
 
@@ -1037,9 +1037,9 @@ He doesn't know me like they do.
 
 We live a simple life beneath the floorboards, hiding when it's light, working when it's dark.
 
-And I know I shouldn't complain - we have everything we need, really, to keep the family happy - but sometimes I wish someone would leave us something //tasty//.
+And I know I shouldn't complain - we have everything we need, really, to keep the family happy - but sometimes I wish someone would leave us something ^^tasty^^.
 
-Nothing wrong with crumbs, the spilled [[cake and jam : jam]] from the tables, but I'm not much of a sweets mouse myself. I like a bit of savoury. I'd love a bit of //cheese//.
+Nothing wrong with crumbs, the spilled [[cake and jam : jam]] from the tables, but I'm not much of a sweets mouse myself. I like a bit of savoury. I'd love a bit of ^^cheese^^.
 
 And today, I can smell it - that pungent umami odour, oh yes, that's a Gouda, perhaps, or - I wrinkle my nose a little - even a Comte. Surely not!
 
@@ -1049,7 +1049,7 @@ The bookcase, that's where it's coming from. How odd.
 
 I skirt around the empty traps left by the people living here. Nice try, folks, but without even a little Jarlsberg I can hardly be expected to risk my life, can I? Give a mouse something to endanger himself for, at least.
 
-But now I've crawled behind the little gap between the bookcase and the wall, and - oh my. A whole //pile// of the stuff. Not just Gouda, not just Comte, but a little morsel of Manchego, a small slice of Gruyere. And not a trap in sight, either!
+But now I've crawled behind the little gap between the bookcase and the wall, and - oh my. A whole ^^pile^^ of the stuff. Not just Gouda, not just Comte, but a little morsel of Manchego, a small slice of Gruyere. And not a trap in sight, either!
 
 I wonder how I'm going to take this all back to the house.
 
@@ -1060,7 +1060,7 @@ I wonder how I'm going to take this all back to the house.
 
 My wife is worried. There's a [[rat : supermice]] in the basement, and he's at least four times our size.
 
-We see him skulking around the halls sometimes, his awful long worm-tail dragging in the dust behind him. He looks, and I hate to play into stereotypes here, //ratty//. Filthy and unwashed and vicious with his long, yellow teeth.
+We see him skulking around the halls sometimes, his awful long worm-tail dragging in the dust behind him. He looks, and I hate to play into stereotypes here, ^^ratty^^. Filthy and unwashed and vicious with his long, yellow teeth.
 
 Not much I can do, though. I'm just one mouse, trying to provide for his [[family : dad]]. He doesn't look friendly.
 
@@ -1098,35 +1098,35 @@ My way is by making a lovely [[table : table]] out of his wretched bones.
 
 MUMMY MUMMY MUMMY POO POO POO
 
-//oh my god, shhhh, shh shh shh//
+^^oh my god, shhhh, shh shh shh^^
 
 WEE WEE BUMS
 
-//[[Clarissa : shit]] nooo, shhhhh//
+^^[[Clarissa : shit]] nooo, shhhhh^^
 
 WILLY WILLY FART FART
 
-//shhhhhh!! please oh shhhh//
+^^shhhhhh!! please oh shhhh^^
 
 POOPY POOPY BUMHOLE
 
-//let's go outside come on please stop wriggling//
+^^let's go outside come on please stop wriggling^^
 
 MUMMY NO I DON'T WANT TO
 
-//yes yes we have to go outside//
+^^yes yes we have to go outside^^
 
 BOTTOMS AND POO
 
-//Clarissa for god's sake, oh, sorry vicar, sorry sorry//
+^^Clarissa for god's sake, oh, sorry vicar, sorry sorry^^
 
 MUMMY AND DADDY DO A SPECIAL HUG AND THAT'S HOW I WAS BORN
 
-//CLARISSA NOO//
+^^CLARISSA NOO^^
 
 THEY DO A HUG EVERY NIGHT AND I SAW IT
 
-//aahhh nooooo//
+^^aahhh nooooo^^
 
 BUMS BUMS BOOBIES HAHAHAHA
 
@@ -1168,7 +1168,7 @@ what is it? downward dog? that's a stupid name
 
 I'm not as flexible as these women are
 
-and they're //way// older than me
+and they're ^^way^^ older than me
 
 I mean
 
@@ -1206,7 +1206,7 @@ I didn't realise Kim's mum was so
 
 uh
 
-//limber//
+^^limber^^
 
 oh my god what's
 
@@ -1220,7 +1220,7 @@ THIS
 oh god oh my god I can't hide this
 
 ah
-//shit//
+^^shit^^
 
 ahhhh I HAVE TO GO HOME SORRY BYE
 
@@ -1284,11 +1284,11 @@ I would watch as spring broke through the soil in yellows, pinks and oranges, as
 
 The years pass with their clean white winters, birthing and aging and dying over and over, and I see it all.
 
-Eventually they built on me. Over me. Around me. Through me. They felt something: an energy, a soul, a purpose; they felt //me//. They did not know it.
+Eventually they built on me. Over me. Around me. Through me. They felt something: an energy, a soul, a purpose; they felt ^^me^^. They did not know it.
 
 They worshipped a Something I cannot name nor understand, but it did not matter; they merely tried to put a name to what I was, what I am.
 
-And time and time again, they come back here, to me. To praise, to love, to fuck, to kill, to //live//.
+And time and time again, they come back here, to me. To praise, to love, to fuck, to kill, to ^^live^^.
 
 And I will watch, and add each photograph of life to my own.
 
@@ -1313,7 +1313,7 @@ Fuck them all.
 
 You take a harsh, long drag.
 
-//Fuck them all.//
+^^Fuck them all.^^
 
 You finish, and throw the cigarette into the bushes.
 
@@ -1321,13 +1321,13 @@ It starts to drizzle.
 
 You kick open the church doors and take shelter inside.
 
-Flick. Flick. Flick. The //fwoosh// of the flame soothes you slightly.
+Flick. Flick. Flick. The ^^fwoosh^^ of the flame soothes you slightly.
 
 You light one of the [[candles : bridezilla]] by the door, the long, tapered kind that you see in [[weddings : wedding]]. Or [[funerals : funeral]].
 
 You can think of a few funerals you'd like to attend.
 
-//**FUCK THEM ALL.**//
+^^&&FUCK THEM ALL.&&^^
 
 You kick at the pews, punch at the walls, a fury of fists and fear.
 
@@ -1358,7 +1358,7 @@ I think about him carving the table, running his hands across the grain, massagi
 
 But now, that means that every time I see that table, I get turned on.
 
-Which is //incredibly awkward in church.//
+Which is ^^incredibly awkward in church.^^
 
 -> DONE
 
@@ -1396,7 +1396,7 @@ I'm just trying to undo his entire life's worth of cruelty.
 
 This morning I attended a [[sermon : sermon]] at a church. I was just passing by on my way to the next place, but I heard singing and thought I might just stop by.
 
-The place was crumbling, the roof stripped of copper and the carpets threadbare. The congregation was tiny, but so clearly happy and loving. This place radiated with //something// - love, or family, or... something. I couldn't name it, but it filled me with a sort of glow.
+The place was crumbling, the roof stripped of copper and the carpets threadbare. The congregation was tiny, but so clearly happy and loving. This place radiated with ^^something^^ - love, or family, or... something. I couldn't name it, but it filled me with a sort of glow.
 
 I sat in one of the pews to listen and absorb. I don't believe, myself, but I've always found churches to be places of peace and acceptance.
 
@@ -1432,11 +1432,11 @@ It's still bloody cold, though.
 
 They're hypocrites, the lot of them.
 
-They come each Sunday to listen to me tell them what not to do, and then they //do it anyway//.
+They come each Sunday to listen to me tell them what not to do, and then they ^^do it anyway^^.
 
 I can hear their secrets, whispered and dirty, in my ears.
 
-//[[Filth. : rats]]//
+^^[[Filth. : rats]]^^
 
 "I think about the dentist when I'm making love to my husband," she says to herself, in her quiet mind. "I fantasise about telling him I need a different kind of filling."
 
@@ -1515,7 +1515,7 @@ a time for [[war : radio]], and a time for peace.
 
 "Well, when you feel hurt, when you feel sad, when others have let you down, he will be there for you."
 
-"But how does he //heal// [[broken hearts : broken_hearts]]?"
+"But how does he ^^heal^^ [[broken hearts : broken_hearts]]?"
 
 The priest looks impatient. "Son, I'm afraid I don't have time to play agony aunt. I deal in matters of faith. If you need advice, try prayer, or talk to a friend."
 
@@ -1536,7 +1536,7 @@ The priest looks impatient. "Son, I'm afraid I don't have time to play agony aun
 
 We have begun the project and it will not be done for months. The architect has laid out measurements, sticks, stones to mark where the walls will go.
 
-The walls, we can imagine; the ceilings, the roof, the floors, the //feeling//, we can not.
+The walls, we can imagine; the ceilings, the roof, the floors, the ^^feeling^^, we can not.
 
 This is a house for Something to live in, and we can almost sense it waiting just beyond our periphery, sitting and watching, benevolent and curious.
 

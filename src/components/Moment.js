@@ -5,6 +5,8 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import Link from './Link';
 
 const LINK_RE = /\[\[\s*(.+?)\s*:\s*(.+?)\s*\]\]/g;
+const BOLD_RE = /&&(.+?)&&/g;
+const EMPH_RE = /\^\^(.+?)\^\^/g;
 
 export default class Moment extends Component {
   static propTypes = {
@@ -19,32 +21,76 @@ export default class Moment extends Component {
   };
 
   renderParagraph(text, index) {
+    const linkedText = [];
     let link = LINK_RE.exec(text);
-    let outputText = [];
     let lastIndex = 0;
 
     while (link !== null) {
-      outputText.push(
+      linkedText.push(
         text
           .substring(lastIndex, link.index)
           .replace(/\t/g, '\u00a0\u00a0\u00a0\u00a0')
           .replace(/ {2}/g, '\u00a0\u00a0'),
       );
-      outputText.push(<Link key={link.index} target={link[2]}>{link[1]}</Link>);
+      linkedText.push(<Link key={link.index} target={link[2]}>{link[1]}</Link>);
 
       lastIndex = link.index + link[0].length;
 
       link = LINK_RE.exec(text);
     }
 
-    outputText.push(
+    linkedText.push(
       text
         .substring(lastIndex)
         .replace(/\t/g, '\u00a0\u00a0\u00a0\u00a0')
         .replace(/ {2}/g, '\u00a0\u00a0'),
     );
 
-    return <p key={index}>{outputText}</p>;
+    const emboldenedText = [];
+
+    linkedText.forEach(text => {
+      if (typeof(text) === 'string' || text instanceof String) {
+        let bold = BOLD_RE.exec(text);
+        lastIndex = 0;
+
+        while (bold !== null) {
+          emboldenedText.push(text.substring(lastIndex, bold.index));
+          emboldenedText.push(<b key={bold.index}>{bold[1]}</b>);
+
+          lastIndex = bold.index + bold[0].length;
+
+          bold = BOLD_RE.exec(text);
+        }
+
+        emboldenedText.push(text.substring(lastIndex));
+      } else {
+        emboldenedText.push(text);
+      }
+    });
+
+    const emphasizedText = [];
+
+    emboldenedText.forEach(text => {
+      if (typeof(text) === 'string' || text instanceof String) {
+        let emph = EMPH_RE.exec(text);
+        lastIndex = 0;
+
+        while (emph !== null) {
+          emphasizedText.push(text.substring(lastIndex, emph.index));
+          emphasizedText.push(<em key={emph.index}>{emph[1]}</em>);
+
+          lastIndex = emph.index + emph[0].length;
+
+          emph = EMPH_RE.exec(text);
+        }
+
+        emphasizedText.push(text.substring(lastIndex));
+      } else {
+        emphasizedText.push(text);
+      }
+    });
+
+    return <p key={index}>{emphasizedText}</p>;
   }
 
   render() {
