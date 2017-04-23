@@ -1,48 +1,68 @@
 export default {
   images: {
     altar_base: {
-      cloudLinkLocation: { top: '5%', right: '5%' },
-      safeTextAreas: [{ top: 0, left: 0, width: '50%', height: '100%' }],
+      cloudLinkLocation: { top: '10%', right: '10%' },
+      safeTextAreas: [
+        { top: '10%', left: '10%', width: '35%', height: '80%' },
+      ],
     },
     beginning: {
-      cloudLinkLocation: { bottom: '5%', right: '5%' },
-      safeTextAreas: [{ top: 0, left: 0, width: '40%', height: '70%' }],
+      cloudLinkLocation: { bottom: '10%', right: '10%' },
+      safeTextAreas: [{ top: '10%', left: '10%', width: '30%', height: '60%' }],
     },
     cave: {
-      cloudLinkLocation: { top: '5%', right: '5%' },
-      safeTextAreas: [{ top: 0, left: 0, width: '60%', height: '100%' }],
+      cloudLinkLocation: { top: '10%', right: '10%' },
+      safeTextAreas: [
+        { top: '10%', left: '10%', width: '35%', height: '80%' },
+      ],
     },
     dusty: {
-      cloudLinkLocation: { bottom: '5%', left: '5%' },
-      safeTextAreas: [{ top: 0, right: 0, width: '50%', height: '100%' }],
+      cloudLinkLocation: { bottom: '10%', left: '10%' },
+      safeTextAreas: [
+        { top: '10%', right: '10%', width: '40%', height: '80%' },
+      ],
     },
     finally: {
-      cloudLinkLocation: { top: '5%', right: '5%' },
-      safeTextAreas: [{ top: 0, left: 0, width: '50%', height: '100%' }],
+      cloudLinkLocation: { top: '10%', right: '10%' },
+      safeTextAreas: [
+        { top: '10%', left: '10%', width: '40%', height: '50%' },
+      ],
     },
     fuckin: {
-      cloudLinkLocation: { top: '5%', right: '5%' },
-      safeTextAreas: [{ top: 0, left: 0, width: '50%', height: '100%' }],
+      cloudLinkLocation: { top: '10%', right: '10%' },
+      safeTextAreas: [
+        { top: '10%', left: '10%', width: '40%', height: '80%' },
+      ],
     },
     pews_base: {
-      cloudLinkLocation: { top: '5%', right: '5%' },
-      safeTextAreas: [{ top: 0, left: 0, width: '50%', height: '100%' }],
+      cloudLinkLocation: { top: '10%', right: '10%' },
+      safeTextAreas: [
+        { top: '10%', left: '10%', width: '40%', height: '50%' },
+      ],
     },
     shit: {
-      cloudLinkLocation: { top: '5%', left: '5%' },
-      safeTextAreas: [{ top: 0, right: 0, width: '60%', height: '100%' }],
+      cloudLinkLocation: { top: '10%', left: '10%' },
+      safeTextAreas: [
+        { top: '10%', right: '10%', width: '50%', height: '80%' },
+      ],
     },
     thing: {
-      cloudLinkLocation: { top: '5%', left: '5%' },
-      safeTextAreas: [{ top: 0, left: '25%', width: '50%', height: '100%' }],
+      cloudLinkLocation: { top: '10%', left: '10%' },
+      safeTextAreas: [
+        { top: '10%', left: '25%', width: '50%', height: '80%' },
+      ],
     },
     wall_base: {
-      cloudLinkLocation: { bottom: '5%', left: '5%' },
-      safeTextAreas: [{ top: 0, right: 0, width: '60%', height: '100%' }],
+      cloudLinkLocation: { bottom: '10%', left: '10%' },
+      safeTextAreas: [
+        { top: '10%', right: '10%', width: '40%', height: '80%' },
+      ],
     },
     window_base: {
-      cloudLinkLocation: { top: '5%', left: '5%' },
-      safeTextAreas: [{ top: 0, right: 0, width: '70%', height: '100%' }],
+      cloudLinkLocation: { top: '10%', left: '10%' },
+      safeTextAreas: [
+        { top: '10%', right: '10%', width: '60%', height: '80%' },
+      ],
     },
   },
 };
