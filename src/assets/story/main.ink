@@ -879,19 +879,19 @@ it is [[too late : dark]].
 
 ^^diiiies iiiilllaaa^^
 
-^^qua-
--re-
--sur-
--get
+^^qua-^^
+^^-re-^^
+^^-sur-^^
+^^-get^^
 
-ex
+^^ex^^
 
-fa-
--vi-
--lla^^
+^^fa-^^
+^^-vi-^^
+^^-lla^^
 
-^^juuuudiiiicaaaandduuuss
-hooooomooooo reeeeeuuuus^^
+^^juuuudiiiicaaaandduuuss^^
+^^hooooomooooo reeeeeuuuus^^
 
 the soft, sweet sound of harmonies echoes through the arches and pillars of the church, ascending gently like a bird, crescendoing like thunder.
 
@@ -997,17 +997,15 @@ I run my hands under the benches of the pews. There is the usual: chewing gum, l
 
 But this time, a note. It's not the first one I've found. It's tucked between the joints in the [[wood : table]]. And, yes, it's in the same handwriting as before.
 
-^^
-\~
+^^\~^^
 
-I have always wanted
+^^I have always wanted^^
 
-to [[fuck : fuckin]]
+^^to^^ [[fuck : fuckin]]
 
-in a church.
+^^in a church.^^
 
-\~
-^^
+^^\~^^
 
 -> DONE
 
@@ -1102,7 +1100,7 @@ MUMMY MUMMY MUMMY POO POO POO
 
 WEE WEE BUMS
 
-^^[[Clarissa : shit]] nooo, shhhhh^^
+[[Clarissa : shit]] ^^nooo, shhhhh^^
 
 WILLY WILLY FART FART
 
@@ -1436,7 +1434,7 @@ They come each Sunday to listen to me tell them what not to do, and then they ^^
 
 I can hear their secrets, whispered and dirty, in my ears.
 
-^^[[Filth. : rats]]^^
+[[Filth. : rats]]
 
 "I think about the dentist when I'm making love to my husband," she says to herself, in her quiet mind. "I fantasise about telling him I need a different kind of filling."
 

@@ -7,6 +7,7 @@ import Link from './Link';
 import bgImage from '../assets/images/bg.png';
 
 const LINK_RE = /\[\[\s*(.+?)\s*:\s*(.+?)\s*\]\]/g;
+const EMPH_BOLD_RE = /\^\^&&(.+?)&&\^\^/g;
 const BOLD_RE = /&&(.+?)&&/g;
 const EMPH_RE = /\^\^(.+?)\^\^/g;
 
@@ -49,10 +50,36 @@ export default class Moment extends Component {
         .replace(/ {2}/g, '\u00a0\u00a0'),
     );
 
-    const emboldenedText = [];
+    const emphasizedEmboldenedText = [];
 
     linkedText.forEach(text => {
-      if (typeof(text) === 'string' || text instanceof String) {
+      if (typeof text === 'string' || text instanceof String) {
+        let emphBold = EMPH_BOLD_RE.exec(text);
+        lastIndex = 0;
+
+        while (emphBold !== null) {
+          emphasizedEmboldenedText.push(
+            text.substring(lastIndex, emphBold.index),
+          );
+          emphasizedEmboldenedText.push(
+            <em key={emphBold.index}><b>{emphBold[1]}</b></em>,
+          );
+
+          lastIndex = emphBold.index + emphBold[0].length;
+
+          emphBold = EMPH_BOLD_RE.exec(text);
+        }
+
+        emphasizedEmboldenedText.push(text.substring(lastIndex));
+      } else {
+        emphasizedEmboldenedText.push(text);
+      }
+    });
+
+    const emboldenedText = [];
+
+    emphasizedEmboldenedText.forEach(text => {
+      if (typeof text === 'string' || text instanceof String) {
         let bold = BOLD_RE.exec(text);
         lastIndex = 0;
 
@@ -74,7 +101,7 @@ export default class Moment extends Component {
     const emphasizedText = [];
 
     emboldenedText.forEach(text => {
-      if (typeof(text) === 'string' || text instanceof String) {
+      if (typeof text === 'string' || text instanceof String) {
         let emph = EMPH_RE.exec(text);
         lastIndex = 0;
 
