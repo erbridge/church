@@ -60,7 +60,13 @@ export class App extends Component {
   }
 
   render() {
-    const { image, moment, paragraphs, visitedMoments } = this.props;
+    const {
+      image,
+      moment,
+      paragraphs,
+      visitedMoments,
+      waitingForInput,
+    } = this.props;
     const { moments } = this.state;
 
     let cloudLinkLocation;
@@ -88,12 +94,13 @@ export class App extends Component {
                   image={images[image]}
                   paragraphs={paragraphs}
                   safeTextAreas={safeTextAreas}
+                  showCloudLink={waitingForInput}
                 />
               : <Cloud
                   items={moments.map(moment => ({
                     text: moment.replace(/_/g, ' '),
                     target: moment,
-                    visited: visitedMoments.indexOf(moment) > -1
+                    visited: visitedMoments.indexOf(moment) > -1,
                   }))}
                 />}
           </Preload>
@@ -108,6 +115,7 @@ const mapStateToProps = state => ({
   moment: storySelectors.getMoment(state),
   paragraphs: storySelectors.getParagraphs(state),
   visitedMoments: storySelectors.getVisitedMoments(state),
+  waitingForInput: storySelectors.getWaitingForInput(state),
 });
 
 export default connect(mapStateToProps)(App);

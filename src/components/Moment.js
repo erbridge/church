@@ -17,6 +17,7 @@ export default class Moment extends Component {
     image: PropTypes.string,
     paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
     safeTextAreas: PropTypes.arrayOf(PropTypes.object),
+    showCloudLink: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -124,7 +125,13 @@ export default class Moment extends Component {
   }
 
   render() {
-    const { cloudLinkLocation, image, paragraphs, safeTextAreas } = this.props;
+    const {
+      cloudLinkLocation,
+      image,
+      paragraphs,
+      safeTextAreas,
+      showCloudLink,
+    } = this.props;
 
     const extraTextStyles = safeTextAreas && safeTextAreas.length
       ? { position: 'absolute', ...safeTextAreas[0] }
@@ -132,7 +139,8 @@ export default class Moment extends Component {
 
     return (
       <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-        {cloudLinkLocation &&
+        {showCloudLink &&
+          cloudLinkLocation &&
           <div
             style={{
               position: 'absolute',

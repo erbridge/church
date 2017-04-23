@@ -5,6 +5,7 @@ import {
   addParagraph,
   clearParagraphs,
   setImage,
+  waitForInput,
 } from '../store/actions/story';
 
 import story from '../assets/story/main.ink.json';
@@ -72,6 +73,8 @@ export default class Narrative {
       await sleep(1000);
 
       await this._processStory(processLoopIndex);
+    } else {
+      this.store.dispatch(waitForInput());
     }
   }
 }
