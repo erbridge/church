@@ -1,4 +1,4 @@
-import { Story } from 'inkjs';
+import { Story } from 'inkjs/dist/ink';
 import sleep from 'mz-modules/sleep';
 
 import {
