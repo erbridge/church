@@ -4,6 +4,8 @@ import { Scrollbars } from 'react-custom-scrollbars';
 
 import Link from './Link';
 
+import bgImage from '../assets/images/bg.png';
+
 const LINK_RE = /\[\[\s*(.+?)\s*:\s*(.+?)\s*\]\]/g;
 const BOLD_RE = /&&(.+?)&&/g;
 const EMPH_RE = /\^\^(.+?)\^\^/g;
@@ -17,6 +19,7 @@ export default class Moment extends Component {
   };
 
   static defaultProps = {
+    image: bgImage,
     safeTextAreas: [],
   };
 
@@ -96,9 +99,6 @@ export default class Moment extends Component {
   render() {
     const { cloudLinkLocation, image, paragraphs, safeTextAreas } = this.props;
 
-    const extraContainerStyles = image
-      ? { backgroundImage: `url(${image})`, backgroundSize: '100% 100%' }
-      : {};
     const extraTextStyles = safeTextAreas && safeTextAreas.length
       ? { position: 'absolute', ...safeTextAreas[0] }
       : {};
@@ -123,9 +123,10 @@ export default class Moment extends Component {
             display: 'flex',
             width: '100%',
             height: '100%',
+            backgroundImage: `url(${image})`,
+            backgroundSize: '100% 100%',
             alignItems: 'flex-start',
             justifyContent: 'stretch',
-            ...extraContainerStyles,
           }}
         >
           <Scrollbars

@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
+import bgImage from '../assets/images/bg.png';
+
 export default class Window extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
@@ -77,6 +79,8 @@ export default class Window extends Component {
           width,
           height,
           overflow: 'hidden',
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: '100% 100%'
         }}
       >
         {children}
