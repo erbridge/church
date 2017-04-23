@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { Scrollbars } from 'react-custom-scrollbars';
 
 import Link from './Link';
 
@@ -66,10 +67,17 @@ export default class Moment extends Component {
           ...extraContainerStyles,
         }}
       >
-        <div
+        <Scrollbars
+          renderTrackHorizontal={() => <div />}
+          renderThumbHorizontal={() => <div />}
+          renderThumbVertical={({ style, ...props }) => (
+            <div
+              {...props}
+              style={{ ...style, backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
+            />
+          )}
           style={{
             flex: 1,
-            overflow: 'auto',
             mixBlendMode: 'difference',
             color: '#bbb',
             fontFamily: 'Asar, serif',
@@ -78,7 +86,7 @@ export default class Moment extends Component {
           }}
         >
           {paragraphs.map((text, i) => this.renderParagraph(text, i))}
-        </div>
+        </Scrollbars>
       </div>
     );
   }
