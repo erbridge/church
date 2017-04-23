@@ -595,24 +595,24 @@ Elizabeth and John, having witnessed your vows of love to one another, it is my 
 == funeral ==
 # image: shit
 
-^^well, this is it, then. The sum of my life, measured in people. Measured by those who came to mourn me. The amount of bums on seats. It's not even a full house.
+^^well, this is it, then. The sum of my life, measured in people. Measured by those who came to mourn me. The amount of bums on seats. It's not even a full house.^^
 
-Still. Can't expect them all to come to something like this. It's incredibly po-faced. Not like me at all, but it's not for me, is it? It's for them. The teary-eyed, mascara-stained people I left behind.
+^^Still. Can't expect them all to come to something like this. It's incredibly po-faced. Not like me at all, but it's not for me, is it? It's for them. The teary-eyed, mascara-stained people I left behind.^^
 
-I always imagined that, if I was still conscious in whatever way at this point, I'd feel one of two things:
+^^I always imagined that, if I was still conscious in whatever way at this point, I'd feel one of two things:^^
 
-bliss
-regret
+^^bliss^^
+^^regret^^
 
-But it's neither. I sort of feel like my heart's calcified. I'm not sad, but I'm not happy, I'm just... curious. Watching people with a scientific eye.
+^^But it's neither. I sort of feel like my heart's calcified. I'm not sad, but I'm not happy, I'm just... curious. Watching people with a scientific eye.^^
 
-Like why is my mother turning from my father as he tries to place his hand over hers?
+^^Like why is my mother turning from my father as he tries to place his hand over hers?^^
 
-Why is my sister not crying?
+^^Why is my sister not crying?^^
 
-Why did Amelia turn up, at all, after everything?
+^^Why did Amelia turn up, at all, after everything?^^
 
-It's frustrating to be so curious when I know I won't ever get to find out the answers. It's just this, a snippet of life after life, a last photograph to dwell on for however long, for whatever comes next.^^
+^^It's frustrating to be so curious when I know I won't ever get to find out the answers. It's just this, a snippet of life after life, a last photograph to dwell on for however long, for whatever comes next.^^
 
 -> DONE
 
