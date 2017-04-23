@@ -126,6 +126,8 @@ export default class Moment extends Component {
   render() {
     const { cloudLinkLocation, image, paragraphs, safeTextAreas } = this.props;
 
+    console.log(cloudLinkLocation);
+
     const extraTextStyles = safeTextAreas && safeTextAreas.length
       ? { position: 'absolute', ...safeTextAreas[0] }
       : {};

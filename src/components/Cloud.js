@@ -78,9 +78,9 @@ export default class Cloud extends Component {
           top,
           left,
           transform: 'translate(-50%, -50%)',
-          textAlign: 'center',
-          fontFamily: 'Asar, serif',
-          fontSize: 24,
+          // textAlign: 'center',
+          // fontFamily: 'Asar, serif',
+          // fontSize: 24,
         }}
       >
         <Link
@@ -110,8 +110,25 @@ export default class Cloud extends Component {
     const { items } = this.props;
 
     return (
-      <div>
+      <div
+        style={{
+          textAlign: 'center',
+          fontFamily: 'Asar, serif',
+          fontSize: 24,
+        }}
+      >
         {items.map((item, i) => this.renderItem(item, i))}
+        {items.every(({ visited }) => visited) &&
+          <div
+            style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+            }}
+          >
+            <Link target="end">move on</Link>
+          </div>}
       </div>
     );
   }

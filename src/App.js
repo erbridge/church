@@ -84,7 +84,7 @@ export class App extends Component {
           >
             {moment && paragraphs && paragraphs.length
               ? <Moment
-                  cloudLinkLocation={cloudLinkLocation}
+                  cloudLinkLocation={moment !== 'end' && cloudLinkLocation}
                   image={images[image]}
                   paragraphs={paragraphs}
                   safeTextAreas={safeTextAreas}
