@@ -91,7 +91,7 @@ export class App extends Component {
                 />
               : <Cloud
                   items={moments.map(moment => ({
-                    text: moment,
+                    text: moment.replace(/_/g, ' '),
                     target: moment,
                   }))}
                 />}
