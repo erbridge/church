@@ -76,17 +76,11 @@ export default class Cloud extends Component {
           top,
           left,
           transform: 'translate(-50%, -50%)',
-          // textAlign: 'center',
-          // fontFamily: 'Asar, serif',
-          // fontSize: 24,
         }}
       >
         <Link
           target={target}
-          style={{
-            mixBlendMode: 'difference',
-            color: visited ? '#999' : 'white',
-          }}
+          visited={visited}
         >
           {text}
         </Link>

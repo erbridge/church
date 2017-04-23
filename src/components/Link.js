@@ -10,19 +10,32 @@ export class Link extends Component {
     dispatch: PropTypes.func.isRequired,
     style: PropTypes.object,
     target: PropTypes.string,
+    visited: PropTypes.bool,
+  };
+
+  state = {
+    isHoveredOver: false,
   };
 
   render() {
-    const { children, dispatch, style, target } = this.props;
+    const { children, dispatch, style, target, visited } = this.props;
+    const { isHoveredOver } = this.state;
 
     return (
       <span
+        onMouseOver={() => this.setState({ isHoveredOver: true })}
+        onMouseOut={() => this.setState({ isHoveredOver: false })}
         onClick={() => dispatch(chooseMoment({ moment: target || null }))}
         style={{
           cursor: 'pointer',
-          color: 'white',
-          textShadow: '0 0 5px white',
-          ...style
+          mixBlendMode: 'difference',
+          color: visited
+            ? isHoveredOver ? '#ddd' : '#999'
+            : isHoveredOver ? 'white' : '#ddd',
+          textShadow: visited
+            ? isHoveredOver ? '0 0 8px #ddd' : '0 0 5px #999'
+            : isHoveredOver ? '0 0 8px white' : '0 0 5px #ddd',
+          ...style,
         }}
       >
         {children}
