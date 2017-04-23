@@ -242,6 +242,7 @@ I don't know how to tell him.
 -> DONE
 
 == jam ==
+# image: table
 
 Today is the bake sale, and I've made - I think - the best Victoria Sponge I've ever made.
 
@@ -371,7 +372,7 @@ Amen.
 -> DONE
 
 == feel ==
-# image: window_base
+# image: crumbled
 
 I can't explain it but there's something here
 
@@ -416,7 +417,7 @@ she looks up at me, her eyes deep translucent pools of grey-green
 -> DONE
 
 == puppies ==
-# image: pews_base
+# image: paws
 
 PUPPIIIIEEEEEEESSSSS
 
@@ -447,7 +448,7 @@ BYE BYE DOGYS
 -> DONE
 
 == dad ==
-# image: altar_base
+# image: confessional
 
 Dad's told me to wait in the vestibule. But I don't want to, it's cold and it's raining. He said he'd be half an hour which is ^^ages^^ so I'm going to explore the church a bit.
 
@@ -528,7 +529,7 @@ AM
 -> DONE
 
 == radio ==
-# image: wall_base
+# image: crumbled
 
 come---n, com--in, is---at Charlie? is any--ne there?
 
@@ -1010,7 +1011,7 @@ But this time, a note. It's not the first one I've found. It's tucked between th
 -> DONE
 
 == notes ==
-# image: wall_base
+# image: confessional
 
 "I must confess, father."
 
@@ -1092,7 +1093,7 @@ My way is by making a lovely [[table : table]] out of his wretched bones.
 -> DONE
 
 == profanity ==
-# image: pews_base
+# image: table
 
 MUMMY MUMMY MUMMY POO POO POO
 
@@ -1156,7 +1157,7 @@ And I pray for belonging. To belong, like I did here. I pray that this is not th
 -> DONE
 
 == pilates ==
-# image: pews_base
+# image: confessional
 
 oh my god these leggings are so tight
 
@@ -1225,7 +1226,7 @@ ahhhh I HAVE TO GO HOME SORRY BYE
 -> DONE
 
 == belief ==
-# image: altar_base
+# image: pulpit
 
 How do you teach something you don't believe in any more?
 
@@ -1249,7 +1250,7 @@ Just read the book
 -> DONE
 
 == hymns ==
-# image: pews_base
+# image: pulpit
 
 I am overcome with feeling.
 
@@ -1342,7 +1343,7 @@ You light another cigarette and breathe in the [[fire : burned]].
 -> DONE
 
 == table ==
-# image: altar_base
+# image: table
 
 There's a new [[table : carving]] in the church, and I know who made it.
 
@@ -1426,7 +1427,7 @@ It's still bloody cold, though.
 -> DONE
 
 == watching ==
-# image: altar_base
+# image: pulpit
 
 They're hypocrites, the lot of them.
 
@@ -1453,7 +1454,7 @@ Covetous, cheating, lying, scheming cowards. All of them.
 -> DONE
 
 == baptism ==
-# image: window_base
+# image: font
 
 I never thought I wanted [[children : pews]], but here I am, babe in arms, husband by my side - a perfect little family.
 
@@ -1496,7 +1497,7 @@ a time for [[war : radio]], and a time for peace.
 -> DONE
 
 == heal ==
-# image: altar_base
+# image: pulpit
 
 "The LORD builds up Jerusalem; he gathers the exiles of Israel. He heals the brokenhearted and binds up their wounds. He determines the number of the stars and calls them each by name."
 
@@ -1581,7 +1582,7 @@ Please. God. I need [[help : help]].
 -> DONE
 
 == love ==
-# image: pews_base
+# image: finally
 
 I love you, and love is not a big enough word.
 
