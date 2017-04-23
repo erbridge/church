@@ -1,4 +1,5 @@
 == whispers ==
+# image: beginning
 
 There are [[whispers : dark]] in the woods. The trees have grown darker and gnarled over the years, and since anyone remembers, there have been no wild animals in sight. Hunting is hard. Living is harder.
 
@@ -25,6 +26,7 @@ You cannot hear the whispers in the woods beyond the sounds of [[hammer meeting 
 -> DONE
 
 == finally ==
+# image: finally
 
 it's here it's here it's finally here!!! I've been waiting for this day my whole life and it's finally fucking here and oh god it feels so good
 
@@ -83,6 +85,7 @@ forever
 -> DONE
 
 == shit ==
+# image: shit
 
 Clarissa is gone. But no matter how many times I say that, I can't make it real. I can still smell her perfume on my blouse, still taste her on my tongue, still hear her laughter in my ears. Her laughter, like a ringing bell, happiness that bubbles up out of her like a spring.
 
@@ -127,6 +130,7 @@ FUCK
 -> DONE
 
 == fuckin ==
+# image: fuckin
 
 he takes my hand
 	urgently
@@ -209,6 +213,7 @@ whatever god used to live here
 -> DONE
 
 == plague ==
+# image: wall_base
 
 **Friday 14th May**
 The ill have been coming in for days and I'm not sure we can handle too many more. The rooms are full, what few we have, and I'm already running low on supplies even though they were delivered just two days ago. I should ask Peter for more, but I am afraid he'll say no. We've got hardly any money left, now.
@@ -267,6 +272,7 @@ I will try to find those berries again, though.
 -> DONE
 
 == cavefolk ==
+# image: cave
 
 oh. my. god. you will never guess what Bethany just did.
 
@@ -299,6 +305,7 @@ piss on it
 -> DONE
 
 == dusty ==
+# image: dusty
 
 The books are dusty and I don't like it. People don't care enough about the books and that means I have to care about the books and the books, they are dusty.
 
@@ -325,6 +332,7 @@ But then I will be dusty.
 -> DONE
 
 == distracted ==
+# image: pews_base
 
 This [[sermon : bible]] is boring and I'm so bloody bored.
 
@@ -363,6 +371,7 @@ Amen.
 -> DONE
 
 == feel ==
+# image: window_base
 
 I can't explain it but there's something here
 
@@ -407,6 +416,7 @@ she looks up at me, her eyes deep translucent pools of grey-green
 -> DONE
 
 == puppies ==
+# image: pews_base
 
 PUPPIIIIEEEEEEESSSSS
 
@@ -437,6 +447,7 @@ BYE BYE DOGYS
 -> DONE
 
 == dad ==
+# image: altar_base
 
 Dad's told me to wait in the vestibule. But I don't want to, it's cold and it's raining. He said he'd be half an hour which is //ages// so I'm going to explore the church a bit.
 
@@ -467,6 +478,7 @@ I wonder where dad's gone.
 -> DONE
 
 == laugh ==
+# image: shit
 
 I feel like I'm supposed to be sad, and I am, but mostly this is weirdly hilarious, and that makes me feel terrible. I told my therapist about this and she said it was a perfectly normal emotional response to stress and grief, but I don't want to laugh at a funeral.
 
@@ -489,6 +501,7 @@ Ha. It's so weird I can't help but laugh.
 -> DONE
 
 == dark ==
+# image: fuckin
 
 iT IS DaRK
 
@@ -515,6 +528,7 @@ AM
 -> DONE
 
 == radio ==
+# image: wall_base
 
 come---n, com--in, is---at Charlie? is any--ne there?
 
@@ -549,6 +563,7 @@ I'm sc---red
 -> DONE
 
 == wedding ==
+# image: altar_base
 
 Dearly beloved, we have come together in the presence of God to witness and bless the joining together of this man and this woman in Holy Matrimony.
 
@@ -577,6 +592,7 @@ Elizabeth and John, having witnessed your vows of love to one another, it is my 
 -> DONE
 
 == funeral ==
+# image: shit
 
 //well, this is it, then. The sum of my life, measured in people. Measured by those who came to mourn me. The amount of bums on seats. It's not even a full house.
 
@@ -600,6 +616,7 @@ It's frustrating to be so curious when I know I won't ever get to find out the a
 -> DONE
 
 == bridezilla ==
+# image: altar_base
 
 I'm going through it all in my head now, the candles, the flowers, the dresses, the timings, the money, the cost, the expense.
 
@@ -622,6 +639,7 @@ It's going to be //perfect//.
 -> DONE
 
 == spiked ==
+# image: pews_base
 
 Therrrrrrres somethin in the teeeeeeeeeea
 
@@ -678,6 +696,7 @@ heh
 -> DONE
 
 == pews ==
+# image: pews_base
 
 Jim! JIM
 
@@ -764,6 +783,7 @@ Jim's face falls.
 -> DONE
 
 == digging ==
+# image: fuckin
 
 "Make us a cuppa, will ya vic?"
 
@@ -853,6 +873,7 @@ it is [[too late : dark]].
 -> DONE
 
 == choir ==
+# image: window_base
 
 //laaaacrimooooosaaaa//
 
@@ -911,6 +932,7 @@ his cries of despair echo around the vaulted ceilings as the songs fade away.
 -> DONE
 
 == billy ==
+# image: wall_base
 
 Things haven't been quite the same since Billy came back from hospital. He'd gone there, so they said, to "recover" from "an episode" but no one really wanted to say what had happened.
 
@@ -927,6 +949,7 @@ Alma. Alma. [[Alma : alma]].
 -> DONE
 
 == alma ==
+# image: pews_base
 
 The [[berries : jam]] were tart and sweet on her tongue, not yet ripe. That's how she liked them. She picked full fistfuls, collecting them in her dress, her hands and clothes stained pink with the juice.
 
@@ -949,6 +972,7 @@ He couldn't help but smile. To have her look at him, to know that for just a sec
 -> DONE
 
 == billy_alma ==
+# image: finally
 
 It was just two weeks to the wedding when they noticed.
 
@@ -967,6 +991,7 @@ She [[died : shit]] on a Tuesday.
 -> DONE
 
 == fuck ==
+# image: pews_base
 
 I run my hands under the benches of the pews. There is the usual: chewing gum, long-hardened; splinters; scratches.
 
@@ -987,6 +1012,7 @@ in a church.
 -> DONE
 
 == notes ==
+# image: wall_base
 
 "I must confess, father."
 
@@ -1007,6 +1033,7 @@ He doesn't know me like they do.
 -> DONE
 
 == mice ==
+# image: dusty
 
 We live a simple life beneath the floorboards, hiding when it's light, working when it's dark.
 
@@ -1029,6 +1056,7 @@ I wonder how I'm going to take this all back to the house.
 -> DONE
 
 == rats ==
+# image: wall_base
 
 My wife is worried. There's a [[rat : supermice]] in the basement, and he's at least four times our size.
 
@@ -1041,6 +1069,7 @@ I wonder if we'll be safe, here.
 -> DONE
 
 == supermice ==
+# image: window_base
 
 Valerie can sew!
 
@@ -1065,6 +1094,7 @@ My way is by making a lovely [[table : table]] out of his wretched bones.
 -> DONE
 
 == profanity ==
+# image: pews_base
 
 MUMMY MUMMY MUMMY POO POO POO
 
@@ -1103,6 +1133,7 @@ BUMS BUMS BOOBIES HAHAHAHA
 -> DONE
 
 == burned ==
+# image: fuckin
 
 I haven't cried since my mother [[died : funeral]].
 
@@ -1127,6 +1158,7 @@ And I pray for belonging. To belong, like I did here. I pray that this is not th
 -> DONE
 
 == pilates ==
+# image: pews_base
 
 oh my god these leggings are so tight
 
@@ -1195,6 +1227,7 @@ ahhhh I HAVE TO GO HOME SORRY BYE
 -> DONE
 
 == belief ==
+# image: altar_base
 
 How do you teach something you don't believe in any more?
 
@@ -1218,6 +1251,7 @@ Just read the book
 -> DONE
 
 == hymns ==
+# image: pews_base
 
 I am overcome with feeling.
 
@@ -1261,6 +1295,7 @@ And I will watch, and add each photograph of life to my own.
 -> DONE
 
 == fire ==
+# image: fuckin
 
 You've never been this angry in your life. The rage is driving you forwards, fuelling you in a way you aren't entirely conscious of.
 
@@ -1309,6 +1344,7 @@ You light another cigarette and breathe in the [[fire : burned]].
 -> DONE
 
 == table ==
+# image: altar_base
 
 There's a new [[table : carving]] in the church, and I know who made it.
 
@@ -1327,6 +1363,7 @@ Which is //incredibly awkward in church.//
 -> DONE
 
 == carving ==
+# image: wall_base
 
 The church has commissioned me to make a [[wooden : tree]] table, which is fantastic. Haven't had any work in weeks.
 
@@ -1341,6 +1378,7 @@ When it's done, I might start back on that old project again. I'll never give it
 -> DONE
 
 == money ==
+# image: pews_base
 
 Have you ever wondered who those people are that leave huge, anonymous donations? Why they're anonymous? Why they donate money?
 
@@ -1369,6 +1407,7 @@ I hope that place stays [[standing : burned]] for whoever [[needs it : broken_he
 -> DONE
 
 == bare ==
+# image: wall_base
 
 The church is quite cold, today. It's midwinter, I suppose, but it's also bare of soft furnishings - no cushions, no carpets, no curtains.
 
@@ -1389,6 +1428,7 @@ It's still bloody cold, though.
 -> DONE
 
 == watching ==
+# image: altar_base
 
 They're hypocrites, the lot of them.
 
@@ -1415,6 +1455,7 @@ Covetous, cheating, lying, scheming cowards. All of them.
 -> DONE
 
 == baptism ==
+# image: window_base
 
 I never thought I wanted [[children : pews]], but here I am, babe in arms, husband by my side - a perfect little family.
 
@@ -1425,6 +1466,7 @@ We've called her [[Clarissa : profanity]].
 -> DONE
 
 == sermon ==
+# image: window_base
 
 "A soft answer turneth away wrath: but grievous words stir up anger.
 
@@ -1435,6 +1477,7 @@ The eyes of the LORD are in every place, beholding the evil and the good."
 -> DONE
 
 == bible ==
+# image: altar_base
 
 For everything there is a season, and a time for every matter under heaven:
 a time to be born, and a time to [[die : funeral]];
@@ -1455,6 +1498,7 @@ a time for [[war : radio]], and a time for peace.
 -> DONE
 
 == heal ==
+# image: altar_base
 
 "The LORD builds up Jerusalem; he gathers the exiles of Israel. He heals the brokenhearted and binds up their wounds. He determines the number of the stars and calls them each by name."
 
@@ -1488,6 +1532,7 @@ The priest looks impatient. "Son, I'm afraid I don't have time to play agony aun
 -> DONE
 
 == building ==
+# image: wall_base
 
 We have begun the project and it will not be done for months. The architect has laid out measurements, sticks, stones to mark where the walls will go.
 
@@ -1504,6 +1549,7 @@ I fear we will never be done running.
 -> DONE
 
 == silence ==
+# image: window_base
 
 A quiet moment, now. No voices, no [[choirs : choir]], just the clouds and the moon and the wind.
 
@@ -1518,6 +1564,7 @@ Deep beneath the earth there comes a [[rumble : END]].
 -> DONE
 
 == lose ==
+# image: window_base
 
 I just don't feel anything any more.
 
@@ -1536,6 +1583,7 @@ Please. God. I need [[help : help]].
 -> DONE
 
 == love ==
+# image: pews_base
 
 I love you, and love is not a big enough word.
 
@@ -1554,6 +1602,7 @@ I love you I love you I love you
 -> DONE
 
 == tree ==
+# image: window_base
 
 There used to be a big oak tree next to the church, grandfather said. It was tall, almost as tall as the steeple, and its branches spread out wide like a splayed hand.
 
@@ -1580,6 +1629,7 @@ You have to accept the fear of Hell if you want to enter Heaven.
 -> DONE
 
 == end ==
+# image: thing
 
 for millennia
 a battle has raged on
@@ -1606,6 +1656,7 @@ and the earth began to shake
 -> DONE
 
 == broken_hearts ==
+# image: finally
 
 "If you say no now, you'll never say yes."
 
@@ -1620,6 +1671,7 @@ He'll never say yes.
 -> DONE
 
 == help ==
+# image: window_base
 
 Sometimes I look down on them, so helpless and afraid, and I wonder what I could do.
 

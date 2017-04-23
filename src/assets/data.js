@@ -9,7 +9,7 @@ export default {
     cave: {
       safeTextAreas: [{ top: 0, left: 0, width: '60%', height: '100%' }],
     },
-    detail: {
+    thing: {
       safeTextAreas: [{ top: 0, left: 0, width: '100%', height: '100%' }],
     },
     pews_base: {
