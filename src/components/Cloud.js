@@ -44,11 +44,11 @@ export default class Cloud extends Component {
       spacing = 2;
       direction = 1;
     } else if (index < 40) {
-      radius = 30;
+      radius = 30 * 2 / 3 + 10;
       spacing = 3;
       direction = -1;
     } else if (index < 50) {
-      radius = 20;
+      radius = 30 / 3 + 10;
       spacing = 5;
       direction = 1;
     } else {
@@ -65,7 +65,7 @@ export default class Cloud extends Component {
       items.length;
 
     const top = `${50 + radius * Math.cos(angle)}%`;
-    const left = `${50 + radius * Math.sin(angle)}%`;
+    const left = `${50 + radius * Math.sin(angle) * 9 / 16}%`;
 
     return (
       <div
@@ -74,7 +74,7 @@ export default class Cloud extends Component {
           position: 'absolute',
           top,
           left,
-          padding: 10,
+          transform: 'translate(-50%, -50%)',
           textAlign: 'center',
           mixBlendMode: 'difference',
           color: '#bbb',
