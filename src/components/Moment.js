@@ -17,14 +17,17 @@ export default class Moment extends Component {
   };
 
   renderParagraph(text, index) {
-    text = text.trim();
-
     let link = LINK_RE.exec(text);
     let outputText = [];
     let lastIndex = 0;
 
     while (link !== null) {
-      outputText.push(text.substring(lastIndex, link.index));
+      outputText.push(
+        text
+          .substring(lastIndex, link.index)
+          .replace(/\t/g, '\u00a0\u00a0\u00a0\u00a0')
+          .replace(/ {2}/g, '\u00a0\u00a0'),
+      );
       outputText.push(<Link key={link.index} target={link[2]}>{link[1]}</Link>);
 
       lastIndex = link.index + link[0].length;
@@ -32,11 +35,14 @@ export default class Moment extends Component {
       link = LINK_RE.exec(text);
     }
 
-    if (outputText.length) {
-      outputText.push(text.substring(lastIndex));
-    }
+    outputText.push(
+      text
+        .substring(lastIndex)
+        .replace(/\t/g, '\u00a0\u00a0\u00a0\u00a0')
+        .replace(/ {2}/g, '\u00a0\u00a0'),
+    );
 
-    return <p key={index}>{outputText.length ? outputText : text}</p>
+    return <p key={index}>{outputText}</p>;
   }
 
   render() {
@@ -55,8 +61,8 @@ export default class Moment extends Component {
           display: 'flex',
           width: '100%',
           height: '100%',
-          alignItems: 'center',
-          justifyContent: 'center',
+          alignItems: 'flex-start',
+          justifyContent: 'stretch',
           ...extraContainerStyles,
         }}
       >
@@ -64,7 +70,6 @@ export default class Moment extends Component {
           style={{
             flex: 1,
             overflow: 'auto',
-            textAlign: 'center',
             mixBlendMode: 'difference',
             color: '#bbb',
             fontFamily: 'Asar, serif',
