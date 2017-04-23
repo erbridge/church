@@ -24,7 +24,9 @@ export default class Narrative {
   }
 
   getMoments() {
-    return Object.keys(this.story.mainContentContainer.namedContent);
+    return Object.keys(this.story.mainContentContainer.namedContent).filter(
+      moment => moment !== 'start' && moment !== 'end',
+    );
   }
 
   chooseMoment(moment) {
