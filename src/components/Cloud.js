@@ -105,7 +105,7 @@ export default class Cloud extends Component {
       <div
         style={{
           textAlign: 'center',
-          fontFamily: 'Asar, serif',
+          fontFamily: 'Cabin, sans-serif',
           fontSize: 24,
         }}
       >

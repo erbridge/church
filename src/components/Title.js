@@ -16,7 +16,7 @@ export default class Title extends Component {
           backgroundSize: '100% 100%',
           alignItems: 'center',
           justifyContent: 'center',
-          fontFamily: 'Asar, serif',
+          fontFamily: 'Cabin, sans-serif',
           fontSize: 72,
         }}
       >

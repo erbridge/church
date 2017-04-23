@@ -166,7 +166,7 @@ export default class Moment extends Component {
               flex: 1,
               mixBlendMode: 'difference',
               color: '#bbb',
-              fontFamily: 'Asar, serif',
+              fontFamily: 'Cabin, sans-serif',
               fontSize: 24,
               ...extraTextStyles,
             }}
@@ -181,7 +181,7 @@ export default class Moment extends Component {
               position: 'absolute',
               mixBlendMode: 'difference',
               color: '#bbb',
-              fontFamily: 'Asar, serif',
+              fontFamily: 'Cabin, sans-serif',
               fontSize: 36,
               ...cloudLinkLocation,
             }}
