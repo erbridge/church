@@ -10,6 +10,7 @@ import storySelectors from './store/selectors/story';
 
 import Cloud from './components/Cloud';
 import Moment from './components/Moment';
+import Title from './components/Title';
 import Window from './components/Window';
 
 import data from './assets/data';
@@ -88,21 +89,23 @@ export class App extends Component {
             loadingIndicator={<Moment paragraphs={['Loading...']} />}
             images={Object.values(images)}
           >
-            {moment && paragraphs && paragraphs.length
-              ? <Moment
-                  cloudLinkLocation={moment !== 'end' && cloudLinkLocation}
-                  image={images[image]}
-                  paragraphs={paragraphs}
-                  safeTextAreas={safeTextAreas}
-                  showCloudLink={waitingForInput}
-                />
-              : <Cloud
-                  items={moments.map(moment => ({
-                    text: moment.replace(/_/g, ' '),
-                    target: moment,
-                    visited: visitedMoments.indexOf(moment) > -1,
-                  }))}
-                />}
+            {waitingForInput && !moment
+              ? <Title />
+              : moment && paragraphs && paragraphs.length
+                  ? <Moment
+                      cloudLinkLocation={moment !== 'end' && cloudLinkLocation}
+                      image={images[image]}
+                      paragraphs={paragraphs}
+                      safeTextAreas={safeTextAreas}
+                      showCloudLink={waitingForInput}
+                    />
+                  : <Cloud
+                      items={moments.map(moment => ({
+                        text: moment.replace(/_/g, ' '),
+                        target: moment,
+                        visited: visitedMoments.indexOf(moment) > -1,
+                      }))}
+                    />}
           </Preload>
         </Window>
       </div>

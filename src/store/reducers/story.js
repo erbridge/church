@@ -73,9 +73,9 @@ export default handleActions(
   },
   {
     image: null,
-    moment: 'start',
+    moment: null,
     paragraphs: [],
     visitedMoments: [],
-    waitingForInput: false,
+    waitingForInput: true,
   },
 );

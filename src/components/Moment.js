@@ -139,20 +139,6 @@ export default class Moment extends Component {
 
     return (
       <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-        {showCloudLink &&
-          cloudLinkLocation &&
-          <div
-            style={{
-              position: 'absolute',
-              mixBlendMode: 'difference',
-              color: '#bbb',
-              fontFamily: 'Asar, serif',
-              fontSize: 36,
-              ...cloudLinkLocation,
-            }}
-          >
-            <Link target={null}>move on</Link>
-          </div>}
         <div
           style={{
             display: 'flex',
@@ -188,6 +174,20 @@ export default class Moment extends Component {
             {paragraphs.map((text, i) => this.renderParagraph(text, i))}
           </Scrollbars>
         </div>
+        {showCloudLink &&
+          cloudLinkLocation &&
+          <div
+            style={{
+              position: 'absolute',
+              mixBlendMode: 'difference',
+              color: '#bbb',
+              fontFamily: 'Asar, serif',
+              fontSize: 36,
+              ...cloudLinkLocation,
+            }}
+          >
+            <Link target={null}>move on</Link>
+          </div>}
       </div>
     );
   }
