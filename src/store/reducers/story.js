@@ -44,7 +44,11 @@ export default handleActions(
     },
     [CHOOSE_MOMENT]: {
       next(state, { payload: { moment } }) {
-        return { ...state, moment };
+        return {
+          ...state,
+          moment,
+          visitedMoments: [...state.visitedMoments, moment],
+        };
       },
       throw(state, { payload }) {
         console.error(payload);
@@ -58,5 +62,6 @@ export default handleActions(
     image: null,
     moment: 'start',
     paragraphs: [],
+    visitedMoments: [],
   },
 );

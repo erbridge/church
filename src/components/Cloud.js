@@ -9,6 +9,7 @@ export default class Cloud extends Component {
       PropTypes.shape({
         text: PropTypes.string.isRequired,
         target: PropTypes.string.isRequired,
+        visited: PropTypes.bool,
       }),
     ).isRequired,
   };
@@ -31,7 +32,9 @@ export default class Cloud extends Component {
     );
   }
 
-  renderItem({ text, target }, index) {
+  renderItem({ text, target, visited }, index) {
+    if (visited) console.log(target);
+
     const { items } = this.props;
     const { rotationOffset } = this.state;
 
@@ -76,13 +79,19 @@ export default class Cloud extends Component {
           left,
           transform: 'translate(-50%, -50%)',
           textAlign: 'center',
-          mixBlendMode: 'difference',
-          color: '#bbb',
           fontFamily: 'Asar, serif',
           fontSize: 24,
         }}
       >
-        <Link target={target}>{text}</Link>
+        <Link
+          target={target}
+          style={{
+            mixBlendMode: 'difference',
+            color: visited ? '#999' : 'white',
+          }}
+        >
+          {text}
+        </Link>
       </div>
     );
   }
