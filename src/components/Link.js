@@ -8,7 +8,7 @@ export class Link extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
     dispatch: PropTypes.func.isRequired,
-    target: PropTypes.string.isRequired,
+    target: PropTypes.string,
   };
 
   render() {
@@ -16,7 +16,7 @@ export class Link extends Component {
 
     return (
       <span
-        onClick={() => dispatch(chooseMoment({ moment: target }))}
+        onClick={() => dispatch(chooseMoment({ moment: target || null }))}
         style={{
           cursor: 'pointer',
           color: 'white',

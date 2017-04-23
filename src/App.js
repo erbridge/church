@@ -2,11 +2,13 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Preload } from 'react-preload';
 import { connect } from 'react-redux';
+import shuffle from 'shuffle-array';
 
 import Narrative from './narrative';
 
 import storySelectors from './store/selectors/story';
 
+import Cloud from './components/Cloud';
 import Moment from './components/Moment';
 import Window from './components/Window';
 
@@ -25,8 +27,12 @@ export class App extends Component {
 
   static propTypes = {
     image: PropTypes.string,
-    moment: PropTypes.string.isRequired,
+    moment: PropTypes.string,
     paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
+  };
+
+  state = {
+    moments: [],
   };
 
   constructor(...props) {
@@ -40,6 +46,10 @@ export class App extends Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.moment !== this.props.moment) {
       this.narrative.chooseMoment(nextProps.moment);
+
+      if (nextProps.moment === null) {
+        this.setState({ moments: shuffle(this.narrative.getMoments()) });
+      }
     }
   }
 
@@ -50,12 +60,19 @@ export class App extends Component {
   }
 
   render() {
-    const { image, paragraphs } = this.props;
+    const { image, moment, paragraphs } = this.props;
+    const { moments } = this.state;
 
+    let cloudLinkLocation;
     let safeTextAreas = [];
 
     if (image) {
-      safeTextAreas = data.images[image].safeTextAreas;
+      const imageData = data.images[image];
+
+      if (imageData) {
+        cloudLinkLocation = imageData.cloudLinkLocation;
+        safeTextAreas = imageData.safeTextAreas;
+      }
     }
 
     return (
@@ -65,13 +82,19 @@ export class App extends Component {
             loadingIndicator={<Moment paragraphs={['Loading...']} />}
             images={Object.values(images)}
           >
-            {paragraphs && paragraphs.length
+            {moment && paragraphs && paragraphs.length
               ? <Moment
+                  cloudLinkLocation={cloudLinkLocation}
                   image={images[image]}
                   paragraphs={paragraphs}
                   safeTextAreas={safeTextAreas}
                 />
-              : <div />}
+              : <Cloud
+                  items={moments.map(moment => ({
+                    text: moment,
+                    target: moment,
+                  }))}
+                />}
           </Preload>
         </Window>
       </div>

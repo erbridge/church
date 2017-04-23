@@ -23,6 +23,10 @@ export default class Narrative {
     return this.chooseMoment(moment);
   }
 
+  getMoments() {
+    return Object.keys(this.story.mainContentContainer.namedContent);
+  }
+
   chooseMoment(moment) {
     if (this.story.state.currentPath === moment) {
       return;

@@ -8,6 +8,7 @@ const LINK_RE = /\[\[\s*(.+?)\s*:\s*(.+?)\s*\]\]/g;
 
 export default class Moment extends Component {
   static propTypes = {
+    cloudLinkLocation: PropTypes.object,
     image: PropTypes.string,
     paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
     safeTextAreas: PropTypes.arrayOf(PropTypes.object),
@@ -47,7 +48,7 @@ export default class Moment extends Component {
   }
 
   render() {
-    const { image, paragraphs, safeTextAreas } = this.props;
+    const { cloudLinkLocation, image, paragraphs, safeTextAreas } = this.props;
 
     const extraContainerStyles = image
       ? { backgroundImage: `url(${image})`, backgroundSize: '100% 100%' }
@@ -57,36 +58,54 @@ export default class Moment extends Component {
       : {};
 
     return (
-      <div
-        style={{
-          display: 'flex',
-          width: '100%',
-          height: '100%',
-          alignItems: 'flex-start',
-          justifyContent: 'stretch',
-          ...extraContainerStyles,
-        }}
-      >
-        <Scrollbars
-          renderTrackHorizontal={() => <div />}
-          renderThumbHorizontal={() => <div />}
-          renderThumbVertical={({ style, ...props }) => (
-            <div
-              {...props}
-              style={{ ...style, backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
-            />
-          )}
+      <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+        {cloudLinkLocation &&
+          <div
+            style={{
+              position: 'absolute',
+              mixBlendMode: 'difference',
+              color: '#bbb',
+              fontFamily: 'Asar, serif',
+              fontSize: 36,
+              ...cloudLinkLocation,
+            }}
+          >
+            <Link target={null}>move on</Link>
+          </div>}
+        <div
           style={{
-            flex: 1,
-            mixBlendMode: 'difference',
-            color: '#bbb',
-            fontFamily: 'Asar, serif',
-            fontSize: 24,
-            ...extraTextStyles,
+            display: 'flex',
+            width: '100%',
+            height: '100%',
+            alignItems: 'flex-start',
+            justifyContent: 'stretch',
+            ...extraContainerStyles,
           }}
         >
-          {paragraphs.map((text, i) => this.renderParagraph(text, i))}
-        </Scrollbars>
+          <Scrollbars
+            renderTrackHorizontal={() => <div />}
+            renderThumbHorizontal={() => <div />}
+            renderThumbVertical={({ style, ...props }) => (
+              <div
+                {...props}
+                style={{
+                  ...style,
+                  backgroundColor: 'rgba(255, 255, 255, 0.3)',
+                }}
+              />
+            )}
+            style={{
+              flex: 1,
+              mixBlendMode: 'difference',
+              color: '#bbb',
+              fontFamily: 'Asar, serif',
+              fontSize: 24,
+              ...extraTextStyles,
+            }}
+          >
+            {paragraphs.map((text, i) => this.renderParagraph(text, i))}
+          </Scrollbars>
+        </div>
       </div>
     );
   }
