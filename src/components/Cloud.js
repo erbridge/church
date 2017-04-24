@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import TransitionGroup from 'react-transition-group/TransitionGroup';
 
 import Link from './Link';
 
@@ -71,8 +72,9 @@ export class Cloud extends Component {
     const left = `${50 + radius * Math.sin(angle) * 9 / 16}%`;
 
     return (
-      <div
+      <TransitionGroup
         key={index}
+        component="div"
         style={{
           position: 'absolute',
           top,
@@ -80,10 +82,15 @@ export class Cloud extends Component {
           transform: 'translate(-50%, -50%)',
         }}
       >
-        <Link dispatch={dispatch} target={target} visited={visited}>
+        <Link
+          dispatch={dispatch}
+          fadeDuration={4000}
+          target={target}
+          visited={visited}
+        >
           {text}
         </Link>
-      </div>
+      </TransitionGroup>
     );
   }
 
