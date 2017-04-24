@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import prefix from 'react-prefixer';
 import { connect } from 'react-redux';
 
 import { chooseMoment } from '../store/actions/story';
@@ -36,6 +37,9 @@ export class Link extends Component {
             ? isHoveredOver ? '0 0 8px #ddd' : '0 0 5px #999'
             : isHoveredOver ? '0 0 8px white' : '0 0 5px #ddd',
           ...style,
+          ...prefix({
+            userSelect: 'none',
+          })
         }}
       >
         {children}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import prefix from 'react-prefixer';
 
 import Link from './Link';
 
@@ -18,6 +19,9 @@ export default class Title extends Component {
           justifyContent: 'center',
           fontFamily: 'Cabin, sans-serif',
           fontSize: 72,
+          ...prefix({
+            userSelect: 'none',
+          }),
         }}
       >
         <Link target="start">move on</Link>

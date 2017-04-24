@@ -80,7 +80,7 @@ export default class Window extends Component {
           height,
           overflow: 'hidden',
           backgroundImage: `url(${bgImage})`,
-          backgroundSize: '100% 100%'
+          backgroundSize: '100% 100%',
         }}
       >
         {children}

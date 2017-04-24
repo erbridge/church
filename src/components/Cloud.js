@@ -78,10 +78,7 @@ export default class Cloud extends Component {
           transform: 'translate(-50%, -50%)',
         }}
       >
-        <Link
-          target={target}
-          visited={visited}
-        >
+        <Link target={target} visited={visited}>
           {text}
         </Link>
       </div>

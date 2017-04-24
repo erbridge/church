@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
+import prefix from 'react-prefixer';
 
 import Link from './Link';
 
@@ -123,7 +124,9 @@ export default class Moment extends Component {
       }
     });
 
-    return <p key={index}>{emphasizedText}</p>;
+    return (
+      <p key={index} style={prefix({ userSelect: 'none' })}>{emphasizedText}</p>
+    );
   }
 
   render() {
