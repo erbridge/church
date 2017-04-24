@@ -17,9 +17,9 @@ import data from './assets/data';
 
 const images = {};
 
-Object.keys(data.images).forEach(
-  key => (images[key] = require(`./assets/images/${key}.png`)),
-);
+Object.keys(data.images).forEach(key => {
+  images[key] = require(`./assets/images/${key}.png`);
+});
 
 export class App extends Component {
   static contextTypes = {
@@ -89,23 +89,35 @@ export class App extends Component {
             loadingIndicator={<Moment paragraphs={['Loading...']} />}
             images={Object.values(images)}
           >
-            {waitingForInput && !moment
-              ? <Title />
-              : moment && paragraphs && paragraphs.length
-                  ? <Moment
-                      cloudLinkLocation={moment !== 'end' && cloudLinkLocation}
-                      image={images[image]}
-                      paragraphs={paragraphs}
-                      safeTextAreas={safeTextAreas}
-                      showCloudLink={waitingForInput}
-                    />
-                  : <Cloud
-                      items={moments.map(moment => ({
-                        text: moment.replace(/_/g, ' '),
-                        target: moment,
-                        visited: visitedMoments.indexOf(moment) > -1,
-                      }))}
-                    />}
+            <div style={{ width: '100%', height: '100%' }}>
+              {Object.keys(images).map(key => (
+                <img
+                  key={key}
+                  src={images[key]}
+                  alt=""
+                  style={{ position: 'absolute', opacity: 0 }}
+                />
+              ))}
+              {waitingForInput && !moment
+                ? <Title />
+                : moment && paragraphs && paragraphs.length
+                    ? <Moment
+                        cloudLinkLocation={
+                          moment !== 'end' && cloudLinkLocation
+                        }
+                        image={images[image]}
+                        paragraphs={paragraphs}
+                        safeTextAreas={safeTextAreas}
+                        showCloudLink={waitingForInput}
+                      />
+                    : <Cloud
+                        items={moments.map(moment => ({
+                          text: moment.replace(/_/g, ' '),
+                          target: moment,
+                          visited: visitedMoments.indexOf(moment) > -1,
+                        }))}
+                      />}
+            </div>
           </Preload>
         </Window>
       </div>
