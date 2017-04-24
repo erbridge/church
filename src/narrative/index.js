@@ -104,7 +104,7 @@ export default class Narrative {
       this.store.dispatch(addParagraph({ text }));
 
       if (this.shouldDelayContent) {
-        await sleep(1000);
+        await sleep(text.split(/\s+/).length * 200);
       }
 
       await this._processStory(processLoopIndex);
