@@ -43,13 +43,13 @@ export default {
     font: {
       cloudLinkLocation: { bottom: '10%', left: '10%' },
       safeTextAreas: [
-        { top: '10%', right: '10%', width: '60%', height: '50%' },
+        { top: '10%', right: '10%', width: '60%', height: '80%' },
       ],
     },
     fuckin: {
       cloudLinkLocation: { top: '10%', right: '10%' },
       safeTextAreas: [
-        { top: '10%', left: '10%', width: '35%', height: '80%' },
+        { top: '10%', left: '10%', width: '30%', height: '80%' },
       ],
     },
     paws: {
@@ -67,7 +67,7 @@ export default {
     pulpit: {
       cloudLinkLocation: { top: '10%', right: '10%' },
       safeTextAreas: [
-        { top: '10%', left: '10%', width: '60%', height: '50%' },
+        { top: '10%', left: '10%', width: '60%', height: '80%' },
       ],
     },
     shit: {
