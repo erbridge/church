@@ -15,6 +15,7 @@ export class Cloud extends Component {
         visited: PropTypes.bool,
       }),
     ).isRequired,
+    style: PropTypes.object,
   };
 
   state = {
@@ -105,28 +106,30 @@ export class Cloud extends Component {
   }
 
   render() {
-    const { dispatch, items } = this.props;
+    const { dispatch, items, style } = this.props;
 
     return (
-      <div
-        style={{
-          textAlign: 'center',
-          fontFamily: 'Averia Libre',
-          fontSize: 24,
-        }}
-      >
-        {items.map((item, i) => this.renderItem(item, i))}
-        {items.every(({ visited }) => visited) &&
-          <div
-            style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-            }}
-          >
-            <Link dispatch={dispatch} target="end">move on</Link>
-          </div>}
+      <div style={style}>
+        <div
+          style={{
+            textAlign: 'center',
+            fontFamily: 'Averia Libre',
+            fontSize: 24,
+          }}
+        >
+          {items.map((item, i) => this.renderItem(item, i))}
+          {items.every(({ visited }) => visited) &&
+            <div
+              style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+              }}
+            >
+              <Link dispatch={dispatch} target="end">move on</Link>
+            </div>}
+        </div>
       </div>
     );
   }

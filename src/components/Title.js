@@ -11,10 +11,11 @@ import logoImage from '../assets/images/logo.png';
 export class Title extends Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
+    style: PropTypes.object,
   };
 
   render() {
-    const { dispatch } = this.props;
+    const { dispatch, style } = this.props;
 
     return (
       <TransitionGroup
@@ -32,6 +33,7 @@ export class Title extends Component {
           ...prefix({
             userSelect: 'none',
           }),
+          ...style,
         }}
       >
         <Link dispatch={dispatch} fadeDuration={10000} target="start">

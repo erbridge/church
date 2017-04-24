@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Preload } from 'react-preload';
 import { connect } from 'react-redux';
+import TransitionGroup from 'react-transition-group/TransitionGroup';
 import shuffle from 'shuffle-array';
 
 import Narrative from './narrative';
@@ -27,6 +28,7 @@ export class App extends Component {
   };
 
   static propTypes = {
+    dispatch: PropTypes.func.isRequired,
     image: PropTypes.string,
     moment: PropTypes.string,
     paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -62,6 +64,7 @@ export class App extends Component {
 
   render() {
     const {
+      dispatch,
       image,
       moment,
       paragraphs,
@@ -94,11 +97,17 @@ export class App extends Component {
         <Window>
           <Preload
             loadingIndicator={
-              <Moment font="Averia Libre" paragraphs={['Loading...']} />
+              <Moment
+                dispatch={dispatch}
+                font="Averia Libre"
+                paragraphs={['Loading...']}
+              />
             }
             images={Object.values(images)}
           >
-            <div style={{ width: '100%', height: '100%' }}>
+            <div
+              style={{ position: 'relative', width: '100%', height: '100%' }}
+            >
               {Object.keys(images).map(key => (
                 <img
                   key={key}
@@ -107,30 +116,49 @@ export class App extends Component {
                   style={{ position: 'absolute', opacity: 0 }}
                 />
               ))}
-              {waitingForInput && !moment
-                ? <Title />
-                : moment
-                    ? <Moment
-                        cloudLinkLocation={
-                          moment !== 'end' && cloudLinkLocation
-                        }
-                        font={
-                          (this.narrative
-                            .getMoments()
-                            .find(({ key }) => key === moment) || {}).font
-                        }
-                        image={images[image]}
-                        paragraphs={paragraphs}
-                        safeTextAreas={safeTextAreas}
-                        showCloudLink={waitingForInput}
-                      />
-                    : <Cloud
-                        items={moments.map(({ name, key }) => ({
-                          text: name,
-                          target: key,
-                          visited: visitedMoments.indexOf(key) > -1,
-                        }))}
-                      />}
+              <TransitionGroup
+                component="div"
+                style={{ position: 'absolute', width: '100%', height: '100%' }}
+              >
+                {moment &&
+                  <Moment
+                    cloudLinkLocation={moment !== 'end' && cloudLinkLocation}
+                    dispatch={dispatch}
+                    fadeDuration={1000}
+                    font={
+                      (this.narrative
+                        .getMoments()
+                        .find(({ key }) => key === moment) || {}).font
+                    }
+                    image={images[image]}
+                    paragraphs={paragraphs}
+                    safeTextAreas={safeTextAreas}
+                    showCloudLink={waitingForInput}
+                  />}
+              </TransitionGroup>
+              {!waitingForInput &&
+                !moment &&
+                <Cloud
+                  items={moments.map(({ name, key }) => ({
+                    text: name,
+                    target: key,
+                    visited: visitedMoments.indexOf(key) > -1,
+                  }))}
+                  style={{
+                    position: 'absolute',
+                    width: '100%',
+                    height: '100%',
+                  }}
+                />}
+              {waitingForInput &&
+                !moment &&
+                <Title
+                  style={{
+                    position: 'absolute',
+                    width: '100%',
+                    height: '100%',
+                  }}
+                />}
             </div>
           </Preload>
         </Window>

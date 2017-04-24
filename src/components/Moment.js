@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
-import { connect } from 'react-redux';
 import TransitionGroup from 'react-transition-group/TransitionGroup';
 
 import Link from './Link';
@@ -9,10 +8,11 @@ import Paragraph from './Paragraph';
 
 import bgImage from '../assets/images/bg.png';
 
-export class Moment extends Component {
+export default class Moment extends Component {
   static propTypes = {
     cloudLinkLocation: PropTypes.object,
     dispatch: PropTypes.func.isRequired,
+    fadeDuration: PropTypes.number,
     font: PropTypes.string,
     image: PropTypes.string,
     paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -24,6 +24,12 @@ export class Moment extends Component {
     font: 'Arsenal',
     image: bgImage,
     safeTextAreas: [],
+  };
+
+  canFade = false;
+
+  state = {
+    opacity: 0,
   };
 
   updateScroll() {
@@ -45,33 +51,80 @@ export class Moment extends Component {
     this.scrollFrame = window.requestAnimationFrame(() => this.updateScroll());
   }
 
+  fade(opacity) {
+    setTimeout(() => {
+      if (this.canFade) {
+        this.setState({ opacity });
+      }
+    }, 0);
+  }
+
+  componentWillMount() {
+    const { fadeDuration } = this.props;
+
+    if (fadeDuration) {
+      this.canFade = true;
+      this.setState({ opacity: 0 });
+    } else {
+      this.setState({ opacity: 1 });
+    }
+  }
+
   componentDidMount() {
     this.updateScroll();
+  }
+
+  componentDidAppear() {
+    this.fade(1);
+  }
+
+  componentDidEnter() {
+    this.fade(1);
+  }
+
+  componentWillLeave(done) {
+    const { fadeDuration } = this.props;
+
+    this.fade(0);
+
+    setTimeout(() => done(), fadeDuration);
   }
 
   componentWillUnmount() {
     window.cancelAnimationFrame(this.scrollFrame);
 
     delete this.scrollFrame;
+
+    this.canFade = false;
   }
 
   render() {
     const {
       cloudLinkLocation,
       dispatch,
+      fadeDuration,
       font,
       image,
       paragraphs,
       safeTextAreas,
       showCloudLink,
     } = this.props;
+    const { opacity } = this.state;
 
     const extraTextStyles = safeTextAreas && safeTextAreas.length
       ? { position: 'absolute', ...safeTextAreas[0] }
       : {};
 
     return (
-      <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      <div
+        style={{
+          position: 'relative',
+          width: '100%',
+          height: '100%',
+          opacity,
+          transition: `opacity ${fadeDuration}ms`,
+        }}
+      >
         <div
           style={{
             display: 'flex',
@@ -135,5 +188,3 @@ export class Moment extends Component {
     );
   }
 }
-
-export default connect()(Moment);
