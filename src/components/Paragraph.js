@@ -147,12 +147,6 @@ export default class Paragraph extends Component {
     this.fade(1);
   }
 
-  componentWillLeave(done) {
-    this.fade(0);
-
-    setTimeout(() => done(), FADE_DURATION);
-  }
-
   componentWillUnmount() {
     this.canFade = false;
   }
