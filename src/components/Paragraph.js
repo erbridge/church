@@ -13,6 +13,7 @@ const FADE_DURATION = 2000;
 
 export default class Paragraph extends Component {
   static propTypes = {
+    dispatch: PropTypes.func.isRequired,
     text: PropTypes.string.isRequired,
   };
 
@@ -24,6 +25,7 @@ export default class Paragraph extends Component {
   };
 
   updateTextNodes(props) {
+    const { dispatch } = props;
     let { text } = props;
 
     text = text.replace(/%%/g, '');
@@ -36,7 +38,11 @@ export default class Paragraph extends Component {
       linkedText.push(
         text.substring(lastIndex, link.index).replace(/ {2}/g, '\u00a0\u00a0'),
       );
-      linkedText.push(<Link key={link.index} target={link[2]}>{link[1]}</Link>);
+      linkedText.push(
+        <Link key={link.index} dispatch={dispatch} target={link[2]}>
+          {link[1]}
+        </Link>,
+      );
 
       lastIndex = link.index + link[0].length;
 

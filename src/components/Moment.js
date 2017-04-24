@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
+import { connect } from 'react-redux';
 import TransitionGroup from 'react-transition-group/TransitionGroup';
 
 import Link from './Link';
@@ -8,9 +9,10 @@ import Paragraph from './Paragraph';
 
 import bgImage from '../assets/images/bg.png';
 
-export default class Moment extends Component {
+export class Moment extends Component {
   static propTypes = {
     cloudLinkLocation: PropTypes.object,
+    dispatch: PropTypes.func.isRequired,
     font: PropTypes.string,
     image: PropTypes.string,
     paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -56,6 +58,7 @@ export default class Moment extends Component {
   render() {
     const {
       cloudLinkLocation,
+      dispatch,
       font,
       image,
       paragraphs,
@@ -105,13 +108,16 @@ export default class Moment extends Component {
             }}
           >
             <TransitionGroup component="div">
-              {paragraphs.map((text, i) => <Paragraph key={i} text={text} />)}
+              {paragraphs.map((text, i) => (
+                <Paragraph key={i} dispatch={dispatch} text={text} />
+              ))}
             </TransitionGroup>
           </Scrollbars>
         </div>
         {showCloudLink &&
           cloudLinkLocation &&
-          <div
+          <TransitionGroup
+            component="div"
             style={{
               position: 'absolute',
               mixBlendMode: 'difference',
@@ -121,9 +127,13 @@ export default class Moment extends Component {
               ...cloudLinkLocation,
             }}
           >
-            <Link target={null}>move on</Link>
-          </div>}
+            <Link dispatch={dispatch} fadeDuration={5000} target={null}>
+              move on
+            </Link>
+          </TransitionGroup>}
       </div>
     );
   }
 }
+
+export default connect()(Moment);

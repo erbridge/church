@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import Link from './Link';
 
-export default class Cloud extends Component {
+export class Cloud extends Component {
   static propTypes = {
+    dispatch: PropTypes.func.isRequired,
     items: PropTypes.arrayOf(
       PropTypes.shape({
         text: PropTypes.string.isRequired,
@@ -33,7 +35,7 @@ export default class Cloud extends Component {
   }
 
   renderItem({ text, target, visited }, index) {
-    const { items } = this.props;
+    const { dispatch, items } = this.props;
     const { rotationOffset } = this.state;
 
     let radius;
@@ -78,7 +80,7 @@ export default class Cloud extends Component {
           transform: 'translate(-50%, -50%)',
         }}
       >
-        <Link target={target} visited={visited}>
+        <Link dispatch={dispatch} target={target} visited={visited}>
           {text}
         </Link>
       </div>
@@ -96,7 +98,7 @@ export default class Cloud extends Component {
   }
 
   render() {
-    const { items } = this.props;
+    const { dispatch, items } = this.props;
 
     return (
       <div
@@ -116,9 +118,11 @@ export default class Cloud extends Component {
               transform: 'translate(-50%, -50%)',
             }}
           >
-            <Link target="end">move on</Link>
+            <Link dispatch={dispatch} target="end">move on</Link>
           </div>}
       </div>
     );
   }
 }
+
+export default connect()(Cloud);

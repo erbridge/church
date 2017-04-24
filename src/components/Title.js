@@ -1,14 +1,24 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import prefix from 'react-prefixer';
+import { connect } from 'react-redux';
+import TransitionGroup from 'react-transition-group/TransitionGroup';
 
 import Link from './Link';
 
 import logoImage from '../assets/images/logo.png';
 
-export default class Title extends Component {
+export class Title extends Component {
+  static propTypes = {
+    dispatch: PropTypes.func.isRequired,
+  };
+
   render() {
+    const { dispatch } = this.props;
+
     return (
-      <div
+      <TransitionGroup
+        component="div"
         style={{
           display: 'flex',
           width: '100%',
@@ -24,8 +34,12 @@ export default class Title extends Component {
           }),
         }}
       >
-        <Link target="start">move on</Link>
-      </div>
+        <Link dispatch={dispatch} fadeDuration={10000} target="start">
+          move on
+        </Link>
+      </TransitionGroup>
     );
   }
 }
+
+export default connect()(Title);
