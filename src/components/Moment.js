@@ -181,7 +181,7 @@ export default class Moment extends Component {
               position: 'absolute',
               mixBlendMode: 'difference',
               color: '#bbb',
-              fontFamily: 'UnifrakturCook',
+              fontFamily: 'Averia Libre',
               fontSize: 36,
               ...cloudLinkLocation,
             }}

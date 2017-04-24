@@ -94,7 +94,7 @@ export class App extends Component {
         <Window>
           <Preload
             loadingIndicator={
-              <Moment font="UnifrakturCook" paragraphs={['Loading...']} />
+              <Moment font="Averia Libre" paragraphs={['Loading...']} />
             }
             images={Object.values(images)}
           >
