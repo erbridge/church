@@ -25,15 +25,20 @@ export default class Moment extends Component {
   };
 
   updateScroll() {
-    const {
-      clientHeight,
-      scrollHeight,
-      scrollTop,
-    } = this.scrollbarsNode.getValues();
+    const { paragraphs } = this.props;
 
-    this.scrollbarsNode.scrollTop(
-      scrollTop + Math.ceil((scrollHeight - clientHeight - scrollTop) * 0.025),
-    );
+    if (paragraphs && paragraphs.length) {
+      const {
+        clientHeight,
+        scrollHeight,
+        scrollTop,
+      } = this.scrollbarsNode.getValues();
+
+      this.scrollbarsNode.scrollTop(
+        scrollTop +
+          Math.ceil((scrollHeight - clientHeight - scrollTop) * 0.025),
+      );
+    }
 
     this.scrollFrame = window.requestAnimationFrame(() => this.updateScroll());
   }
@@ -47,10 +52,6 @@ export default class Moment extends Component {
 
     delete this.scrollFrame;
   }
-
-  // componentDidUpdate() {
-  //   this.scrollbarsNode.scrollToBottom();
-  // }
 
   render() {
     const {

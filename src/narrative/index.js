@@ -11,7 +11,6 @@ import {
 import story from '../assets/story/main.ink.json';
 
 export default class Narrative {
-  shouldDelayContent = true;
   processLoopIndex = 0;
 
   constructor(store) {
@@ -56,8 +55,6 @@ export default class Narrative {
       return;
     }
 
-    this.shouldDelayContent = true;
-
     this.store.dispatch(clearParagraphs());
 
     this.story.ChoosePathString(moment);
@@ -68,8 +65,6 @@ export default class Narrative {
   }
 
   fastForward() {
-    this.shouldDelayContent = false;
-
     if (this.story.canContinue) {
       this.processLoopIndex++;
 
@@ -103,9 +98,7 @@ export default class Narrative {
 
       this.store.dispatch(addParagraph({ text }));
 
-      if (this.shouldDelayContent) {
-        await sleep(text.split(/\s+/).length * 200);
-      }
+      await sleep(text.split(/\s+/).length * 200);
 
       await this._processStory(processLoopIndex);
     } else {
