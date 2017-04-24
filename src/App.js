@@ -83,7 +83,14 @@ export class App extends Component {
     }
 
     return (
-      <div style={{ width: '100%', height: '100%', backgroundColor: 'black' }}>
+      <div
+        onClick={() => this.narrative.fastForward()}
+        style={{
+          width: '100%',
+          height: '100%',
+          backgroundColor: 'black',
+        }}
+      >
         <Window>
           <Preload
             loadingIndicator={<Moment paragraphs={['Loading...']} />}

@@ -26,7 +26,10 @@ export class Link extends Component {
       <span
         onMouseOver={() => this.setState({ isHoveredOver: true })}
         onMouseOut={() => this.setState({ isHoveredOver: false })}
-        onClick={() => dispatch(chooseMoment({ moment: target || null }))}
+        onClick={ev => {
+          ev.stopPropagation();
+          dispatch(chooseMoment({ moment: target || null }));
+        }}
         style={{
           cursor: 'pointer',
           mixBlendMode: 'difference',
@@ -39,7 +42,7 @@ export class Link extends Component {
           ...style,
           ...prefix({
             userSelect: 'none',
-          })
+          }),
         }}
       >
         {children}

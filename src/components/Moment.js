@@ -35,10 +35,7 @@ export default class Moment extends Component {
 
     while (link !== null) {
       linkedText.push(
-        text
-          .substring(lastIndex, link.index)
-          .replace(/\t/g, '\u00a0\u00a0\u00a0\u00a0')
-          .replace(/ {2}/g, '\u00a0\u00a0'),
+        text.substring(lastIndex, link.index).replace(/ {2}/g, '\u00a0\u00a0'),
       );
       linkedText.push(<Link key={link.index} target={link[2]}>{link[1]}</Link>);
 
@@ -47,12 +44,7 @@ export default class Moment extends Component {
       link = LINK_RE.exec(text);
     }
 
-    linkedText.push(
-      text
-        .substring(lastIndex)
-        .replace(/\t/g, '\u00a0\u00a0\u00a0\u00a0')
-        .replace(/ {2}/g, '\u00a0\u00a0'),
-    );
+    linkedText.push(text.substring(lastIndex).replace(/ {2}/g, '\u00a0\u00a0'));
 
     const emphasizedEmboldenedText = [];
 
