@@ -18,28 +18,51 @@ export class Title extends Component {
     const { dispatch, style } = this.props;
 
     return (
-      <TransitionGroup
-        component="div"
+      <div
         style={{
-          display: 'flex',
+          position: 'relative',
           width: '100%',
           height: '100%',
-          backgroundImage: `url(${logoImage})`,
-          backgroundSize: '100% 100%',
-          alignItems: 'center',
-          justifyContent: 'center',
-          fontFamily: 'Averia Libre',
-          fontSize: 72,
-          ...prefix({
-            userSelect: 'none',
-          }),
           ...style,
         }}
       >
-        <Link dispatch={dispatch} fadeDuration={10000} target="start">
-          move on
-        </Link>
-      </TransitionGroup>
+        <TransitionGroup
+          component="div"
+          style={{
+            position: 'absolute',
+            display: 'flex',
+            width: '100%',
+            height: '100%',
+            backgroundImage: `url(${logoImage})`,
+            backgroundSize: '100% 100%',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontFamily: 'Averia Libre',
+            fontSize: 72,
+          }}
+        >
+          <Link dispatch={dispatch} fadeDuration={10000} target="start">
+            move on
+          </Link>
+        </TransitionGroup>
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '30%',
+            width: '100%',
+            textAlign: 'center',
+            mixBlendMode: 'difference',
+            color: '#888',
+            fontFamily: 'Averia Libre',
+            fontSize: 24,
+            ...prefix({
+              userSelect: 'none',
+            }),
+          }}
+        >
+          Kate Gray | Felix Laurie von Massenbach | Beck Michalak
+        </div>
+      </div>
     );
   }
 }
