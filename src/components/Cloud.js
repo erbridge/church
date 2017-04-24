@@ -44,11 +44,11 @@ export default class Cloud extends Component {
       radius = 40;
       spacing = 2;
       direction = 1;
-    } else if (index < 38) {
+    } else if (index < 39) {
       radius = 30 * 2 / 3 + 10;
       spacing = 3;
       direction = -1;
-    } else if (index < 48) {
+    } else if (index < 49) {
       radius = 30 / 3 + 10;
       spacing = 5;
       direction = 1;
