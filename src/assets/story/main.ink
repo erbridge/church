@@ -133,82 +133,82 @@ FUCK
 # image: fuckin
 
 he takes my hand
-	urgently
-		he pulls me
-				^^come^^ he says
+%    urgently
+%        he pulls me
+%                ^^come^^ he says
 
-					I follow
+%                    I follow
 
 the door creaks open on its old, old hinges
-	it sounds like a moan
-	 ^^ohh^^
+%    it sounds like a moan
+%     ^^ohh^^
 
 we're barely inside and he pushes me hard against the cold stone wall
-	I gasp
-		a sharp intake of breath
-			ohh
+%    I gasp
+%        a sharp intake of breath
+%            ohh
 
 and then he tenderly brushes my hair behind my ear and
-	kisses
-		down
-			from my jawline
-				to my collarbone
+%    kisses
+%        down
+%            from my jawline
+%                to my collarbone
 
 I close my eyes and let that heat swarm me
-	spreading through my cheeks
-		down
-			my
-				spine
-					and
-						lower
-							still
+%    spreading through my cheeks
+%        down
+%            my
+%                spine
+%                    and
+%                        lower
+%                            still
 
 I am red, I am pink
 
 his strong hands on my hips, around my waist, he holds me tight
-	pulls me in
-		gently, firmly
-			for a kiss
+%    pulls me in
+%        gently, firmly
+%            for a kiss
 
 he kisses me with soft, warm lips
-	at first, slowly
-		growing more passionate
-			he bites
-				I gasp
-					(again)
+%    at first, slowly
+%        growing more passionate
+%            he bites
+%                I gasp
+%                    (again)
 
 but in a moment I see something in the background
-	an altar
-		oh
-			I've always wanted to be sacrilegious
+%    an altar
+%        oh
+%            I've always wanted to be sacrilegious
 
 I bite my lip and put my hand on his chest
-	^^let's go over there^^ I say
-		I pull him forwards
-			through the rows of rotten wood
-				to the front
+%    ^^let's go over there^^ I say
+%        I pull him forwards
+%            through the rows of rotten wood
+%                to the front
 
 A solitary ray of moonlight shines down from a colourful glass window above us
 
 I jump up
-	sit on the altar
-		legs slightly apart
-			he moves forward
-				a look on his face
-					halfway between a smile and pure desire
-						^^ohh^^
+%    sit on the altar
+%        legs slightly apart
+%            he moves forward
+%                a look on his face
+%                    halfway between a smile and pure desire
+%                        ^^ohh^^
 
 he pulls himself into me
-	I grasp the stone beneath me
-		it is smooth and cold
-			but he is so warm
+%    I grasp the stone beneath me
+%        it is smooth and cold
+%            but he is so warm
 
 his breathing is hard
-			ragged
-				hot on my neck
+%            ragged
+%                hot on my neck
 
 whatever god used to live here
-			I wonder if he is [[watching : watching]]
+%            I wonder if he is [[watching : watching]]
 
 -> DONE
 
@@ -644,14 +644,14 @@ It's going to be ^^perfect^^.
 
 Therrrrrrres somethin in the teeeeeeeeeea
 
-		hahahahaha
+%        hahahahaha
 
-				what??
+%                what??
 
 
 I DONT KNowwwwwwww hahahahaaaaaaa
 
-		whyyyyyyyyy you laf
+%        whyyyyyyyyy you laf
 
 
 
@@ -674,16 +674,16 @@ heh
   oh nooooo!!!!!
 
 whaT
-	what u put inna tee
+%    what u put inna tee
 
 
 
 *snork*
 
 it wa
-	it wassa
-	*snork*
-		wiskee
+%    it wassa
+%    *snork*
+%        wiskee
 
 WASSAT
 

@@ -26,6 +26,8 @@ export default class Moment extends Component {
   };
 
   renderParagraph(text, index) {
+    text = text.replace(/%/g, '');
+
     const linkedText = [];
     let link = LINK_RE.exec(text);
     let lastIndex = 0;
