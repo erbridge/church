@@ -24,6 +24,34 @@ export default class Moment extends Component {
     safeTextAreas: [],
   };
 
+  updateScroll() {
+    const {
+      clientHeight,
+      scrollHeight,
+      scrollTop,
+    } = this.scrollbarsNode.getValues();
+
+    this.scrollbarsNode.scrollTop(
+      scrollTop + Math.ceil((scrollHeight - clientHeight - scrollTop) * 0.025),
+    );
+
+    this.scrollFrame = window.requestAnimationFrame(() => this.updateScroll());
+  }
+
+  componentDidMount() {
+    this.updateScroll();
+  }
+
+  componentWillUnmount() {
+    window.cancelAnimationFrame(this.scrollFrame);
+
+    delete this.scrollFrame;
+  }
+
+  // componentDidUpdate() {
+  //   this.scrollbarsNode.scrollToBottom();
+  // }
+
   render() {
     const {
       cloudLinkLocation,
@@ -52,6 +80,9 @@ export default class Moment extends Component {
           }}
         >
           <Scrollbars
+            ref={node => {
+              this.scrollbarsNode = node;
+            }}
             renderTrackHorizontal={() => <div />}
             renderThumbHorizontal={() => <div />}
             renderThumbVertical={({ style, ...props }) => (
