@@ -8,6 +8,8 @@ import Paragraph from './Paragraph';
 
 import bgImage from '../assets/images/bg.png';
 
+const SCROLL_LOCK_OFFSET = 40;
+
 export default class Moment extends Component {
   static propTypes = {
     cloudLinkLocation: PropTypes.object,
@@ -30,22 +32,27 @@ export default class Moment extends Component {
 
   state = {
     opacity: 0,
+    shouldScroll: false,
   };
 
   updateScroll() {
-    const { paragraphs } = this.props;
+    const { shouldScroll } = this.state;
 
-    if (paragraphs && paragraphs.length) {
+    if (shouldScroll) {
       const {
         clientHeight,
         scrollHeight,
         scrollTop,
       } = this.scrollbarsNode.getValues();
 
-      this.scrollbarsNode.scrollTop(
-        scrollTop +
-          Math.ceil((scrollHeight - clientHeight - scrollTop) * 0.025),
-      );
+      if (scrollTop < scrollHeight - clientHeight) {
+        this.scrollbarsNode.scrollTop(
+          scrollTop +
+            Math.ceil((scrollHeight - clientHeight - scrollTop) * 0.025),
+        );
+      } else {
+        this.setState({ shouldScroll: false });
+      }
     }
 
     this.scrollFrame = window.requestAnimationFrame(() => this.updateScroll());
@@ -80,6 +87,20 @@ export default class Moment extends Component {
 
   componentDidEnter() {
     this.fade(1);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.paragraphs.length !== this.props.paragraphs.length) {
+      const {
+        clientHeight,
+        scrollHeight,
+        scrollTop,
+      } = this.scrollbarsNode.getValues();
+
+      if (scrollTop + SCROLL_LOCK_OFFSET >= scrollHeight - clientHeight) {
+        this.setState({ shouldScroll: true });
+      }
+    }
   }
 
   componentWillLeave(done) {
