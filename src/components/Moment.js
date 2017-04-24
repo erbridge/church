@@ -1,16 +1,12 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
-import prefix from 'react-prefixer';
+import TransitionGroup from 'react-transition-group/TransitionGroup';
 
 import Link from './Link';
+import Paragraph from './Paragraph';
 
 import bgImage from '../assets/images/bg.png';
-
-const LINK_RE = /\[\[\s*(.+?)\s*:\s*(.+?)\s*\]\]/g;
-const EMPH_BOLD_RE = /\^\^&&(.+?)&&\^\^/g;
-const BOLD_RE = /&&(.+?)&&/g;
-const EMPH_RE = /\^\^(.+?)\^\^/g;
 
 export default class Moment extends Component {
   static propTypes = {
@@ -27,101 +23,6 @@ export default class Moment extends Component {
     image: bgImage,
     safeTextAreas: [],
   };
-
-  renderParagraph(text, index) {
-    text = text.replace(/%%/g, '');
-
-    const linkedText = [];
-    let link = LINK_RE.exec(text);
-    let lastIndex = 0;
-
-    while (link !== null) {
-      linkedText.push(
-        text.substring(lastIndex, link.index).replace(/ {2}/g, '\u00a0\u00a0'),
-      );
-      linkedText.push(<Link key={link.index} target={link[2]}>{link[1]}</Link>);
-
-      lastIndex = link.index + link[0].length;
-
-      link = LINK_RE.exec(text);
-    }
-
-    linkedText.push(text.substring(lastIndex).replace(/ {2}/g, '\u00a0\u00a0'));
-
-    const emphasizedEmboldenedText = [];
-
-    linkedText.forEach(text => {
-      if (typeof text === 'string' || text instanceof String) {
-        let emphBold = EMPH_BOLD_RE.exec(text);
-        lastIndex = 0;
-
-        while (emphBold !== null) {
-          emphasizedEmboldenedText.push(
-            text.substring(lastIndex, emphBold.index),
-          );
-          emphasizedEmboldenedText.push(
-            <em key={emphBold.index}><b>{emphBold[1]}</b></em>,
-          );
-
-          lastIndex = emphBold.index + emphBold[0].length;
-
-          emphBold = EMPH_BOLD_RE.exec(text);
-        }
-
-        emphasizedEmboldenedText.push(text.substring(lastIndex));
-      } else {
-        emphasizedEmboldenedText.push(text);
-      }
-    });
-
-    const emboldenedText = [];
-
-    emphasizedEmboldenedText.forEach(text => {
-      if (typeof text === 'string' || text instanceof String) {
-        let bold = BOLD_RE.exec(text);
-        lastIndex = 0;
-
-        while (bold !== null) {
-          emboldenedText.push(text.substring(lastIndex, bold.index));
-          emboldenedText.push(<b key={bold.index}>{bold[1]}</b>);
-
-          lastIndex = bold.index + bold[0].length;
-
-          bold = BOLD_RE.exec(text);
-        }
-
-        emboldenedText.push(text.substring(lastIndex));
-      } else {
-        emboldenedText.push(text);
-      }
-    });
-
-    const emphasizedText = [];
-
-    emboldenedText.forEach(text => {
-      if (typeof text === 'string' || text instanceof String) {
-        let emph = EMPH_RE.exec(text);
-        lastIndex = 0;
-
-        while (emph !== null) {
-          emphasizedText.push(text.substring(lastIndex, emph.index));
-          emphasizedText.push(<em key={emph.index}>{emph[1]}</em>);
-
-          lastIndex = emph.index + emph[0].length;
-
-          emph = EMPH_RE.exec(text);
-        }
-
-        emphasizedText.push(text.substring(lastIndex));
-      } else {
-        emphasizedText.push(text);
-      }
-    });
-
-    return (
-      <p key={index} style={prefix({ userSelect: 'none' })}>{emphasizedText}</p>
-    );
-  }
 
   render() {
     const {
@@ -171,7 +72,9 @@ export default class Moment extends Component {
               ...extraTextStyles,
             }}
           >
-            {paragraphs.map((text, i) => this.renderParagraph(text, i))}
+            <TransitionGroup component="div">
+              {paragraphs.map((text, i) => <Paragraph key={i} text={text} />)}
+            </TransitionGroup>
           </Scrollbars>
         </div>
         {showCloudLink &&
