@@ -15,6 +15,7 @@ const EMPH_RE = /\^\^(.+?)\^\^/g;
 export default class Moment extends Component {
   static propTypes = {
     cloudLinkLocation: PropTypes.object,
+    font: PropTypes.string,
     image: PropTypes.string,
     paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
     safeTextAreas: PropTypes.arrayOf(PropTypes.object),
@@ -22,6 +23,7 @@ export default class Moment extends Component {
   };
 
   static defaultProps = {
+    font: 'Arsenal',
     image: bgImage,
     safeTextAreas: [],
   };
@@ -124,6 +126,7 @@ export default class Moment extends Component {
   render() {
     const {
       cloudLinkLocation,
+      font,
       image,
       paragraphs,
       safeTextAreas,
@@ -163,7 +166,7 @@ export default class Moment extends Component {
               flex: 1,
               mixBlendMode: 'difference',
               color: '#bbb',
-              fontFamily: 'Cabin, sans-serif',
+              fontFamily: font,
               fontSize: 24,
               ...extraTextStyles,
             }}
@@ -178,7 +181,7 @@ export default class Moment extends Component {
               position: 'absolute',
               mixBlendMode: 'difference',
               color: '#bbb',
-              fontFamily: 'Cabin, sans-serif',
+              fontFamily: 'UnifrakturCook',
               fontSize: 36,
               ...cloudLinkLocation,
             }}

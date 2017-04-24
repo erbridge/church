@@ -93,7 +93,9 @@ export class App extends Component {
       >
         <Window>
           <Preload
-            loadingIndicator={<Moment paragraphs={['Loading...']} />}
+            loadingIndicator={
+              <Moment font="UnifrakturCook" paragraphs={['Loading...']} />
+            }
             images={Object.values(images)}
           >
             <div style={{ width: '100%', height: '100%' }}>
@@ -107,10 +109,15 @@ export class App extends Component {
               ))}
               {waitingForInput && !moment
                 ? <Title />
-                : moment && paragraphs && paragraphs.length
+                : moment
                     ? <Moment
                         cloudLinkLocation={
                           moment !== 'end' && cloudLinkLocation
+                        }
+                        font={
+                          (this.narrative
+                            .getMoments()
+                            .find(({ key }) => key === moment) || {}).font
                         }
                         image={images[image]}
                         paragraphs={paragraphs}

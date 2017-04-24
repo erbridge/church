@@ -247,6 +247,7 @@ whatever god used to live here
 == plague ==
 # name: sick
 # image: wall_base
+# font: Satisfy
 
 &&Friday 14th May&&
 The ill have been coming in for days and I'm not sure we can handle too many more. The rooms are full, what few we have, and I'm already running low on supplies even though they were delivered just two days ago. I should ask Peter for more, but I am afraid he'll say no. We've got hardly any money left, now.
@@ -457,6 +458,7 @@ she looks up at me, her eyes deep translucent pools of grey-green
 == puppies ==
 # name: joy
 # image: paws
+# font: Gloria Hallelujah
 
 PUPPIIIIEEEEEEESSSSS
 
@@ -545,6 +547,7 @@ Ha. It's so weird I can't help but laugh.
 == dark ==
 # name: dark
 # image: fuckin
+# font: Playfair Display SC
 
 iT IS DaRK
 
@@ -573,6 +576,7 @@ AM
 == radio ==
 # name: radio
 # image: crumbled
+# font: Special Elite
 
 come---n, com--in, is---at Charlie? is any--ne there?
 
@@ -609,6 +613,7 @@ I'm sc---red
 == wedding ==
 # name: join
 # image: altar_base
+# font: Ovo
 
 Dearly beloved, we have come together in the presence of God to witness and bless the joining together of this man and this woman in Holy Matrimony.
 
@@ -1089,6 +1094,7 @@ He doesn't know me like they do.
 == mice ==
 # name: mice
 # image: dusty
+# font: Josefin Sans
 
 We live a simple life beneath the floorboards, hiding when it's light, working when it's dark.
 
@@ -1113,6 +1119,7 @@ I wonder how I'm going to take this all back to the house.
 == rats ==
 # name: rats
 # image: wall_base
+# font: Josefin Sans
 
 My wife is worried. There's a [[rat : supermice]] in the basement, and he's at least four times our size.
 
@@ -1127,6 +1134,7 @@ I wonder if we'll be safe, here.
 == supermice ==
 # name: sew
 # image: window_base
+# font: Josefin Sans
 
 Valerie can sew!
 
@@ -1510,6 +1518,7 @@ We've called her [[Clarissa : profanity]].
 == sermon ==
 # name: eyes
 # image: window_base
+# font: Ovo
 
 "A soft answer turneth away wrath: but grievous words stir up anger.
 
@@ -1522,6 +1531,7 @@ The eyes of the LORD are in every place, beholding the evil and the good."
 == bible ==
 # name: read
 # image: altar_base
+# font: Ovo
 
 For everything there is a season, and a time for every matter under heaven:
 a time to be born, and a time to [[die : funeral]];

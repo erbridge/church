@@ -17,7 +17,7 @@ export default class Title extends Component {
           backgroundSize: '100% 100%',
           alignItems: 'center',
           justifyContent: 'center',
-          fontFamily: 'Cabin, sans-serif',
+          fontFamily: 'UnifrakturCook',
           fontSize: 72,
           ...prefix({
             userSelect: 'none',

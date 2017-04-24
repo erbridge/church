@@ -102,7 +102,7 @@ export default class Cloud extends Component {
       <div
         style={{
           textAlign: 'center',
-          fontFamily: 'Cabin, sans-serif',
+          fontFamily: 'UnifrakturCook',
           fontSize: 24,
         }}
       >

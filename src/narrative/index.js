@@ -31,17 +31,23 @@ export default class Narrative {
       .map(key => {
         const knotTags = this.story.TagsForContentAtPath(key);
 
-        const tag = knotTags.find(tag => tag.startsWith('name:'));
-
+        const nameTag = knotTags.find(tag => tag.startsWith('name:'));
         let name;
 
-        if (tag) {
-          name = tag.split(':').slice(1).join(':').trim();
+        if (nameTag) {
+          name = nameTag.split(':').slice(1).join(':').trim();
         } else {
           name = key.replace(/_/g, ' ');
         }
 
-        return { name, key };
+        const fontTag = knotTags.find(tag => tag.startsWith('font:'));
+        let font;
+
+        if (fontTag) {
+          font = fontTag.split(':').slice(1).join(':').trim();
+        }
+
+        return { key, font, name };
       });
   }
 
