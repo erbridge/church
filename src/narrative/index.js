@@ -26,9 +26,23 @@ export default class Narrative {
   }
 
   getMoments() {
-    return Object.keys(this.story.mainContentContainer.namedContent).filter(
-      moment => moment !== 'start' && moment !== 'end',
-    );
+    return Object.keys(this.story.mainContentContainer.namedContent)
+      .filter(key => key !== 'start' && key !== 'end')
+      .map(key => {
+        const knotTags = this.story.TagsForContentAtPath(key);
+
+        const tag = knotTags.find(tag => tag.startsWith('name:'));
+
+        let name;
+
+        if (tag) {
+          name = tag.split(':').slice(1).join(':').trim();
+        } else {
+          name = key.replace(/_/g, ' ');
+        }
+
+        return { name, key };
+      });
   }
 
   chooseMoment(moment) {

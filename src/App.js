@@ -118,10 +118,10 @@ export class App extends Component {
                         showCloudLink={waitingForInput}
                       />
                     : <Cloud
-                        items={moments.map(moment => ({
-                          text: moment.replace(/_/g, ' '),
-                          target: moment,
-                          visited: visitedMoments.indexOf(moment) > -1,
+                        items={moments.map(({ name, key }) => ({
+                          text: name,
+                          target: key,
+                          visited: visitedMoments.indexOf(key) > -1,
                         }))}
                       />}
             </div>
