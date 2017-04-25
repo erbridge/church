@@ -1616,7 +1616,7 @@ A small roost of crows nestles in the belfry.
 
 You can almost feel the building breathe, slow and quiet, like a mountain breathes.
 
-Deep beneath the earth there comes a [[rumble : END]].
+Deep beneath the earth there comes a rumble.
 
 -> DONE
 
