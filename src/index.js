@@ -7,6 +7,8 @@ import { createStore } from './store';
 
 import App from './App';
 
+import './assets/css/fonts.css';
+
 const store = createStore();
 
 ReactDOM.render(
