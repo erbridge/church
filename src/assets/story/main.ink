@@ -1743,14 +1743,17 @@ we can sense it within ourse→..\/\/)00)))000111--
 
 [CORRUPTED DATA]
 
+-> DONE
 
-crime
+== crime ==
+# name: crime
+# image: window_base
 
 rag around my fist, smash it through the window, shit, that was loud
 quick climb up through broken shards
-careful 
+careful
 soft cushioned landing, crouch down behind bench
-assess 
+assess
 empty - good
 silent - good
 dark - good

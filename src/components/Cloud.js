@@ -44,15 +44,15 @@ export class Cloud extends Component {
     let spacing;
     let direction;
 
-    if (index < 24) {
+    if (index < 25) {
       radius = 40;
       spacing = 2;
       direction = 1;
-    } else if (index < 39) {
+    } else if (index < 40) {
       radius = 30 * 2 / 3 + 10;
       spacing = 3;
       direction = -1;
-    } else if (index < 49) {
+    } else if (index < 50) {
       radius = 30 / 3 + 10;
       spacing = 5;
       direction = 1;
